@@ -315,7 +315,7 @@
       <!-- End Page Title -->
   
       <div class="d-grid gap-2 d-md-block">
-        <a class="btn" style="text-decoration: none; margin-right: 10px; box-shadow: 2px 2px 1px grey; background-color: #2C5C52; color: white; border-radius: 50px;" href="kegiatan-osis.html">Kegiatan</a>
+        <a class="btn" style="text-decoration: none; margin-right: 10px; box-shadow: 2px 2px 1px grey; background-color: #2C5C52; color: white; border-radius: 50px;" href="osis.html">Kegiatan</a>
         <a class="btn" style="text-decoration: none;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="anggota-osis.html">Anggota</a>
         <a class="btn" style="text-decoration: none;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="absensi-osis.html">Absen</a>
       </div>
@@ -328,41 +328,43 @@
                 <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahkegiatan">Tambah Kegiatan</button>
                 <div class="table-responsive">
                   <table id="example" class="table table-striped " style="width:100%"> 
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama</th>
-                            <th>Jabatan</th>
-                            <th>Tanggal</th>
-                            <th>Status</th>
-                            <th>Keterangan</th>
-                            <th>Foto Selfie</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                          <td>01</td>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011-04-25</td>
-                            <td><img src="img/1.png" alt=""></td>
-                            <td style="width: 150px;">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                  <i class="bi bi-eye-fill" style="width: 10px ;"></i>
-                                </button>    
-                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                  <i class="bi bi-pencil"></i>
-                                </button>   
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                  <i class="bi bi-trash"></i>
-                                </button>                          
-                            </td>
-                        </tr>
-                      </tbody>
-                  </table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Jabatan</th>
+                                <th>Tanggal</th>
+                                <th>Status</th>
+                                <th>Keterangan</th>
+                                <th>Foto Selfie</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>01</td>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011-04-25</td>
+                                <td><img src="img/1.png" alt=""></td>
+                                <td style="width: 150px;">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                      <i class="bi bi-eye-fill" style="width: 10px ;"></i>
+                                    </button>    
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                      <i class="bi bi-pencil"></i>
+                                    </button>   
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                      <i class="bi bi-trash"></i>
+                                    </button>                          
+                                </td>
+                            </tr>
+
+                        </tbody>
+                  
+                    </table>
                 </div>
               </div>
             </div>
@@ -370,55 +372,89 @@
         </div>
       </div>
       <!-- modal -->
-      <div class="modal fade" id="detailkelas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"> Detail Kelas</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel"> Detail Absensi Siswa</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Nama Kelas</div>
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Lengkap</div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Wali Kelas </div>
+                <div class="col-lg-6 col-md-8 label mb-4">Kelas </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Tanggal </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Status </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Keterangan </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Gambar </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="modal fade" id="editkelas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Kelas</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Siswa</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form action="" method="">
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Kelas</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
                   <div class="col-md-8 col-lg-9">
                     <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Wali Kelas</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Kelas</label>
                   <div class="col-md-8 col-lg-9">
                     <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggal</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Status</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Keterangan</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Gambar</label>
+                  <div class="col-md-8 col-lg-9">
                   </div>
                 </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-success">Simpan</button>
+              <button type="button" class="btn btn-primary">Simpan</button>
             </div>
           </div>
         </div>
       </div>
-
       <div class="modal fade" id="tambahkegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
