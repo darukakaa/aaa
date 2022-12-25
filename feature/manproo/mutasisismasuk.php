@@ -166,7 +166,7 @@
       </li><!-- End Admin TU Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="osis.html">
+        <a class="nav-link collapsed" href="osis.php">
           <img src="assets/img/9.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Osis</span>
         </a>
