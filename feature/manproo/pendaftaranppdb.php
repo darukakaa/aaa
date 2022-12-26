@@ -332,15 +332,15 @@
                                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                                       <i class="bi bi-pencil"></i>
                                     </button>   
-                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete">
                                       <i class="bi bi-trash"></i>
                                     </button>                          
                                 </td>
                             </tr>
                             <tr>
-                              <td>1</td>
+                              <td>2</td>
                                 <td>2022220111</td>
-                                <td>Bryan Adi</td>
+                                <td> Adi</td>
                                 <td>Laki-laki</td>
                                 <td>20/12/2022</td>
                                 <td>Selesai</td>
@@ -375,6 +375,7 @@
             </div>
             <div class="modal-body">
               <form action="" method="">
+              
                 <div class="row mb-3">
                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Kelas</label>
                   <div class="col-md-8 col-lg-9">
@@ -474,6 +475,24 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- modal hapus -->
+          <div class="modal fade" id="delete" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" style="width:20rem">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <center>
+                <p>Apakah anda ingin hapus data</p>
+                <p>tersebut ?</p>
+                <a href="osis.php" class="btn" style="border-radius: 10px; background-color:#fff; ">Batal</a>
+                <button type="submit" class="btn" style="background-color:#5DA194; color:#fff; border-radius: 10px;">Hapus</button>
+              </center>
             </div>
           </div>
         </div>
