@@ -305,61 +305,44 @@
           <div class="col-lg-12 mx-auto">
             <div class="card rounded shadow border-0">
               <div class="card-body p-5 bg-white rounded">
-                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahpendaftar">Tambah Pengajuan</button>
-                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahpendaftar">Print Laporan</button>
+                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahsiswa">Tambah Pendaftar</button>
+                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#printlaporan">Print Laporan <i class="bi bi-file-earmark-pdf-fill"></i></button>
                 <div class="table-responsive">
                   <table id="example" class="table table-striped " style="width:100%">
                     
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>No. Peserta</th>
+                                <th>No. Pengajuan</th>
                                 <th>Nama Lengkap</th>
-                                <th>Jenis Kelamin</th>
-                                <th>Tanggal Daftar</th>
+                                <th>kelas</th>
                                 <th>Status</th>
+                                <th>Timestamps</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                              <td>1</td>
-                                <td>2022220111</td>
-                                <td>Bryan Adi</td>
-                                <td>Laki-laki</td>
-                                <td>20/12/2022</td>
-                                <td>Selesai</td>
+                              <td>01</td>
+                                <td>200509744</td>
+                                <td>Bryan adi Prakosos</td>
+                                <td>X IPA 1</td>
+                                <td>Diterima</td>
+                                <td>-</td>
                                 <td style="width: 150px;">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#info">
                                       <i class="bi bi-eye-fill" style="width: 10px ;"></i>
                                     </button>    
-                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#detail">
                                       <i class="bi bi-pencil"></i>
                                     </button>   
-                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus">
                                       <i class="bi bi-trash"></i>
                                     </button>                          
                                 </td>
                             </tr>
-                            <tr>
-                              <td>2</td>
-                                <td>2022220111</td>
-                                <td>Bryan Adi</td>
-                                <td>Laki-laki</td>
-                                <td>20/12/2022</td>
-                                <td>Selesai</td>
-                                <td style="width: 150px;">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                      <i class="bi bi-eye-fill" style="width: 10px ;"></i>
-                                    </button>    
-                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                      <i class="bi bi-pencil"></i>
-                                    </button>   
-                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                      <i class="bi bi-trash"></i>
-                                    </button>                          
-                                </td>
-                            </tr>
+
+                            
                         </tbody>
                   
                     </table>
@@ -369,121 +352,410 @@
           </div>
         </div>
       </div>
-      <!-- modal -->
-      <div class="modal fade" id="tambahpendaftar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+            <!-- modal tambah siswa -->
+            <div class="modal fade" id="tambahsiswa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content" style="width: 650px;">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Pengajuan Mutasi Siswa</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="row mb-3">
+                        <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto Profil</label>
+                        <div class="col-md-8 col-lg-9">
+                          <img src="assets/img/profile-img.jpg" alt="Profile">
+                          <div class="pt-2">
+                            <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">NISN</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="nisn" type="text" class="form-control" id="nisn" value="Mirna Milasari">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">TTL</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="nisn" type="text" class="form-control" id="nisn" value="">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="company" class="col-md-4 col-lg-3 col-form-label">Jenis Kelamin</label>
+                        <div class="col-md-8 col-lg-9">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Perempuan</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Laki-Laki</label>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Agama</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih Agama --</option>
+                            <option value="1">Islam</option>
+                            <option value="2">Kristen</option>
+                            <option value="3">Hindu</option>
+                            <option value="3">Budha</option>
+                          </select>
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">No. Telepon</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="telepon" type="text" class="form-control" id="Telepon" value="">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="email" type="email" class="form-control" id="Email" value="">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Siswa</label>
+                        <div class="col-md-8 col-lg-9">
+                          <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                        </div>
+                      </div>
+                      
+                      <div class="row mb-3">
+                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Nama Wali Murid</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="alamatsiswa" type="text" class="form-control" id="alamatsiswa" value="">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Wali Murid</label>
+                        <div class="col-md-8 col-lg-9">
+                          <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                        </div>
+                      </div>
+      
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-success">Simpan</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal Print Laporan -->
+            <div class="modal fade" id="printlaporan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content" style="width: 650px;">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Pengajuan Mutasi Siswa</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="row mb-3">
+                        <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Tanggal Pengajuan</label>
+                        <div class="col-md-8 col-lg-9">
+                          <img src="assets/img/profile-img.jpg" alt="Profile">
+                          <div class="pt-2">
+                            <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">NISN</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="nisn" type="text" class="form-control" id="nisn" value="Mirna Milasari">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">TTL</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="nisn" type="text" class="form-control" id="nisn" value="">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="company" class="col-md-4 col-lg-3 col-form-label">Jenis Kelamin</label>
+                        <div class="col-md-8 col-lg-9">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Perempuan</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Laki-Laki</label>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Agama</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih Agama --</option>
+                            <option value="1">Islam</option>
+                            <option value="2">Kristen</option>
+                            <option value="3">Hindu</option>
+                            <option value="3">Budha</option>
+                          </select>
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">No. Telepon</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="telepon" type="text" class="form-control" id="Telepon" value="">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="email" type="email" class="form-control" id="Email" value="">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Siswa</label>
+                        <div class="col-md-8 col-lg-9">
+                          <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                        </div>
+                      </div>
+                      
+                      <div class="row mb-3">
+                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Nama Wali Murid</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="alamatsiswa" type="text" class="form-control" id="alamatsiswa" value="">
+                        </div>
+                      </div>
+      
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Wali Murid</label>
+                        <div class="col-md-8 col-lg-9">
+                          <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                        </div>
+                      </div>
+      
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-success">Simpan</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!-- modal informasi siswa -->
+      <div class="modal fade" id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Kelas</h1>
+              
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <h2 style="text-align:center;">Informasi Siswa</h1>
             <div class="modal-body">
-              <form action="" method="">
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Kelas</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Wali Kelas</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-success">Simpan</button>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Foto Pofil <img src="assets/img/profile-img.jpg" alt="" width="100" height="100" ></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Lengkap  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">NISN </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Tempat, Tanggal Lahir </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Jenis Kelamin </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Agama </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Jabatan di Organisasi </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">No. Telepon </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Email </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Wali Murid </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Alamat Wali Murid </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- modal edit informasi siswa -->
+      <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content" style="width: 650px;">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"> Detail Absensi Siswa</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Informasi Siswa</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Nama Lengkap</div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Kelas </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Tanggal </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Status </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Keterangan </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Gambar </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              <form>
+                <div class="row mb-3">
+                  <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto Profil</label>
+                  <div class="col-md-8 col-lg-9">
+                    <img src="assets/img/profile-img.jpg" alt="Profile">
+                    <div class="pt-2">
+                      <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
+                    </div>
+                  </div>
+                </div>
 
-      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Siswa</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form action="" method="">
                 <div class="row mb-3">
                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
                   <div class="col-md-8 col-lg-9">
                     <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
                   </div>
                 </div>
+
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Kelas</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">NISN</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                    <input name="nisn" type="text" class="form-control" id="nisn" value="Mirna Milasari">
                   </div>
                 </div>
+
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggal</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">TTL</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                    <input name="nisn" type="text" class="form-control" id="nisn" value="">
                   </div>
                 </div>
+
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Status</label>
+                  <label for="company" class="col-md-4 col-lg-3 col-form-label">Jenis Kelamin</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Perempuan</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Laki-Laki</label>
+                    </div>
                   </div>
                 </div>
+
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Keterangan</label>
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Agama</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih Agama --</option>
+                      <option value="1">Islam</option>
+                      <option value="2">Kristen</option>
+                      <option value="3">Hindu</option>
+                      <option value="3">Budha</option>
+                    </select>
                   </div>
                 </div>
+
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Gambar</label>
+                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">No. Telepon</label>
                   <div class="col-md-8 col-lg-9">
+                    <input name="telepon" type="text" class="form-control" id="Telepon" value="">
                   </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="email" type="email" class="form-control" id="Email" value="">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Siswa</label>
+                  <div class="col-md-8 col-lg-9">
+                    <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Nama Wali Murid</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="alamatsiswa" type="text" class="form-control" id="alamatsiswa" value="">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Wali Murid</label>
+                  <div class="col-md-8 col-lg-9">
+                    <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success">Simpan</button>
                 </div>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Simpan</button>
             </div>
           </div>
         </div>
       </div>
-      
-  </main><!-- End #main -->
+            <!-- modal hapus -->
+      <div class="modal fade" id="hapus" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" style="width:20rem">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <center>
+                <p>Apakah anda ingin hapus data</p>
+                <p>tersebut ?</p>
+                <a href="anggota-osis.php" class="btn" style="border-radius: 10px; background-color:#fff; ">Batal</a>
+                <button type="submit" class="btn" style="background-color:#5DA194; color:#fff; border-radius: 10px;">Hapus</button>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -501,27 +773,26 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.min.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.min.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/js/jquery-3.5.1.js"></script>
-  <script src="assets/js/jquery.dataTables.min.js"></script>
-  <script src="assets/js/dataTables.bootstrap5.min.js"></script>
-  <script>
-  $(document).ready(function () {
-      $('#example').DataTable();
-  });
-  </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.min.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
