@@ -305,7 +305,7 @@
           <div class="col-lg-12 mx-auto">
             <div class="card rounded shadow border-0">
               <div class="card-body p-5 bg-white rounded">
-                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahsiswa">Tambah Pendaftar</button>
+                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahpengajuan">Tambah Pengajuan</button>
                 <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#printlaporan">Print Laporan <i class="bi bi-file-earmark-pdf-fill"></i></button>
                 <div class="table-responsive">
                   <table id="example" class="table table-striped " style="width:100%">
@@ -325,7 +325,7 @@
                             <tr>
                               <td>01</td>
                                 <td>200509744</td>
-                                <td>Bryan adi Prakosos</td>
+                                <td>Bryan adi Prakoso</td>
                                 <td>X IPA 1</td>
                                 <td>Diterima</td>
                                 <td>-</td>
@@ -353,27 +353,22 @@
         </div>
       </div>
     
-            <!-- modal tambah siswa -->
-            <div class="modal fade" id="tambahsiswa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <!-- modal tambah pengajuan mutasi -->
+            <div class="modal fade" id="tambahpengajuan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-dialog-scrollable">
                 <div class="modal-content" style="width: 650px;">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Pengajuan Mutasi Siswa</h1>
+                    <h1 class="modal-title fs-5 " id="exampleModalLabel">Tambah Pengajuan Mutasi Siswa </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <form>
                       <div class="row mb-3">
-                        <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto Profil</label>
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggal Pengajuan</label>
                         <div class="col-md-8 col-lg-9">
-                          <img src="assets/img/profile-img.jpg" alt="Profile">
-                          <div class="pt-2">
-                            <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
-                            <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
-                          </div>
+                          <input type="date" class="form-control">
                         </div>
                       </div>
-      
                       <div class="row mb-3">
                         <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
                         <div class="col-md-8 col-lg-9">
@@ -389,9 +384,9 @@
                       </div>
       
                       <div class="row mb-3">
-                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">TTL</label>
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Umur</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="nisn" type="text" class="form-control" id="nisn" value="">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
                         </div>
                       </div>
       
@@ -407,58 +402,40 @@
                             <label class="form-check-label" for="inlineRadio2">Laki-Laki</label>
                           </div>
                         </div>
-                      </div>
-      
+                      </div>  
                       <div class="row mb-3">
-                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Agama</label>
+                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">Tahun Pelajaran</label>
                         <div class="col-md-8 col-lg-9">
-                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
-                            <option selected>-- Pilih Agama --</option>
-                            <option value="1">Islam</option>
-                            <option value="2">Kristen</option>
-                            <option value="3">Hindu</option>
-                            <option value="3">Budha</option>
-                          </select>
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
                         </div>
                       </div>
-      
                       <div class="row mb-3">
-                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">No. Telepon</label>
+                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">Sekolah Lama</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="telepon" type="text" class="form-control" id="Telepon" value="">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
                         </div>
                       </div>
-      
                       <div class="row mb-3">
-                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">Sekolah Baru</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="email" type="email" class="form-control" id="Email" value="">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
                         </div>
                       </div>
-      
                       <div class="row mb-3">
-                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Siswa</label>
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alasan Mutasi</label>
                         <div class="col-md-8 col-lg-9">
-                          <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                          <textarea name="alasan" class="form-control" id="alasan" style="height: 100px"></textarea>
                         </div>
                       </div>
-                      
                       <div class="row mb-3">
-                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Nama Wali Murid</label>
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Dokumen</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="alamatsiswa" type="text" class="form-control" id="alamatsiswa" value="">
-                        </div>
-                      </div>
-      
-                      <div class="row mb-3">
-                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Wali Murid</label>
-                        <div class="col-md-8 col-lg-9">
-                          <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                          <input name="alamat" class="form-control" id="about" style="height: 200px" value="input class="form-control" type="file">
                         </div>
                       </div>
       
                       <div class="text-center">
-                        <button type="submit" class="btn btn-success">Simpan</button>
+                        <button type="submit" class="btn btn-success">Masuk</button>
                       </div>
                     </form>
                   </div>
@@ -467,10 +444,10 @@
             </div>
             <!-- modal Print Laporan -->
             <div class="modal fade" id="printlaporan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-dialog  modal-dialog-scrollable">
                 <div class="modal-content" style="width: 650px;">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Pengajuan Mutasi Siswa</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cetak Pengajuan Mutasi Siswa</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -570,7 +547,7 @@
                       </div>
       
                       <div class="text-center">
-                        <button type="submit" class="btn btn-success">Simpan</button>
+                        <button type="submit" class="btn btn-success">Masuk</button>
                       </div>
                     </form>
                   </div>
@@ -579,72 +556,101 @@
             </div>
       <!-- modal informasi siswa -->
       <div class="modal fade" id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content" style="width: 650px;">
             <div class="modal-header">
               
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <h2 style="text-align:center;">Informasi Siswa</h1>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Foto Pofil <img src="assets/img/profile-img.jpg" alt="" width="100" height="100" ></div>
+            <div class="modal-body" >
+              <h2 style="text-align:center;">Informasi Pengguna</h2>
+              <div class=" text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                <h8>
+                  Identitas Pengguna
+                </h8>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Nama Lengkap  </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;"  >
+                <div class="col-lg-6 col-md-8 label mb-4">Foto Pofil : <img src="assets/img/profile-img.jpg" alt="" width="100px" style="margin-left: 150px;"></div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">NISN </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Lengkap :
+               </div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Tempat, Tanggal Lahir </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">NISN :</div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Jenis Kelamin </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Kelas :</div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Agama </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Tempat, Tanggal Lahir :</div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Jabatan di Organisasi </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Jenis Kelamin :</div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">No. Telepon </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Agama :</div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Email </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">No. Telepon :</div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Nama Wali Murid </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Email :</div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Alamat Wali Murid </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Wali Murid :</div>
               </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Alamat Wali Murid :</div>
+              </div>
+              <div class=" text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                <h8>
+                  Pengajuan Mutasi
+                </h8>
+              </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Tanggal Pengajuan :</div>
+              </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Tahun Pelajaran :</div>
+              </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Sekolah Lama :</div>
+              </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Sekolah Baru :</div>
+              </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Alasan Mutasi :</div>
+              </div>
+              <div class="row"style="width: 500px; margin-left: 3rem;">
+                <div class="col-lg-6 col-md-8 label mb-4">Dokumen :</div>
+              </div>
+                <button type="button"  class="btn add-kelas " style="margin-left: 29rem; " >Cetak <i class="bi bi-file-earmark-pdf-fill"></i></button>
+                <button type="button"  class="btn add-kelas " style="margin-left: 12rem;background-color: #00F043;" >Konfirmasi </button>
+                <button type="button"  class="btn add-kelas " style="margin-left: 1rem;background-color: #F00000;" >Batal </button>
+              </div>
+              
+
             </div>
-          </div>
         </div>
       </div>
-      <!-- modal edit informasi siswa -->
+      <!-- modal Edit Pengajuan Mutasi Siswa -->
       <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content" style="width: 650px;">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Informasi Siswa</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Pengajuan Mutasi Siswa</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form>
                 <div class="row mb-3">
-                  <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto Profil</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggal Pengajuan</label>
                   <div class="col-md-8 col-lg-9">
-                    <img src="assets/img/profile-img.jpg" alt="Profile">
-                    <div class="pt-2">
-                      <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
-                      <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
-                    </div>
+                    <input type="date" class="form-control">
                   </div>
                 </div>
-
                 <div class="row mb-3">
                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
                   <div class="col-md-8 col-lg-9">
@@ -660,9 +666,9 @@
                 </div>
 
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">TTL</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Kelas</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="nisn" type="text" class="form-control" id="nisn" value="">
+                    <input name="kelas" type="text" class="form-control" id="kelas" value="">
                   </div>
                 </div>
 
@@ -679,57 +685,39 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="row mb-3">
-                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Agama</label>
+                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">Tahun Pelajaran</label>
                   <div class="col-md-8 col-lg-9">
-                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
-                      <option selected>-- Pilih Agama --</option>
-                      <option value="1">Islam</option>
-                      <option value="2">Kristen</option>
-                      <option value="3">Hindu</option>
-                      <option value="3">Budha</option>
-                    </select>
+                    <input name="tapel" type="text" class="form-control" id="tapel" value="">
                   </div>
                 </div>
-
                 <div class="row mb-3">
-                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">No. Telepon</label>
+                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">Sekolah Lama</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="telepon" type="text" class="form-control" id="Telepon" value="">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
                   </div>
                 </div>
-
                 <div class="row mb-3">
-                  <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">Sekolah Baru</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="email" type="email" class="form-control" id="Email" value="">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
                   </div>
                 </div>
-
                 <div class="row mb-3">
-                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Siswa</label>
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alasan Mutasi</label>
                   <div class="col-md-8 col-lg-9">
-                    <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                    <textarea name="alasan" class="form-control" id="alasan" style="height: 100px"></textarea>
                   </div>
                 </div>
-                
                 <div class="row mb-3">
-                  <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Nama Wali Murid</label>
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Dokumen</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="alamatsiswa" type="text" class="form-control" id="alamatsiswa" value="">
-                  </div>
-                </div>
-
-                <div class="row mb-3">
-                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Wali Murid</label>
-                  <div class="col-md-8 col-lg-9">
-                    <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
+                    <input name="alamat" class="form-control" id="about" style="height: 200px" value="input class="form-control" type="file">
                   </div>
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" class="btn btn-success">Simpan</button>
+                  <button type="submit" class="btn btn-success">Masuk</button>
                 </div>
               </form>
             </div>

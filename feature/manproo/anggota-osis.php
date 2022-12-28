@@ -366,7 +366,7 @@
     
             <!-- modal tambah siswa -->
             <div class="modal fade" id="tambahsiswa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content" style="width: 650px;">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Siswa</h1>

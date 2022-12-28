@@ -382,12 +382,6 @@
                     <input class="form-control" type="file" id="formFile">
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Deskripsi</label>
-                  <div class="col-md-8 col-lg-9">
-                    <textarea class="form-control" style="height: 100px"></textarea>
-                  </div>
-                </div>
                 <div class="card">
                   <div class="card-body">
                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Deskripsi</label>
@@ -456,16 +450,10 @@
                     <input class="form-control" type="file" id="formFile">
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Deskripsi</label>
-                  <div class="col-md-8 col-lg-9">
-                    <textarea class="form-control" style="height: 100px"></textarea>
-                  </div>
-                </div>
                 <div class="card">
                   <div class="card-body">
                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Deskripsi</label>
-                    <div class="quill-editor-full">
+                    <div class="quill-editor-full" style="height: 100px">
                       <p>Hello World!</p>
                     </div>
                   </div>
