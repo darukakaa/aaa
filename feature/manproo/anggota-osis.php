@@ -87,7 +87,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.php">
                 <i class="bi bi-person"></i>
                 <span>Profil</span>
               </a>
@@ -109,57 +109,56 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link collapsed" href="index.php">
+          <!-- <i class="bi bi-grid"></i> -->
           <img src="assets/img/1.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav --> 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="absensi-siswa.html">
+        <a class="nav-link collapsed" href="absensi-siswa.php">
           <img src="assets/img/2.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Absensi</span>
         </a>
       </li><!-- End Absensi Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="kelas.html">
+        <a class="nav-link collapsed" href="kelas.php">
           <img src="assets/img/3.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Kelas</span>
         </a>
       </li><!-- End Kelas Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="penilaian-belajar.html">
+        <a class="nav-link collapsed" href="penilaian-belajar.php">
           <img src="assets/img/4.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Penilaian Belajar</span>
         </a>
       </li><!-- End Penilaian Page Nav -->
-
       <li class="nav-item">
-        <a class="nav-link collapsed" href="rapor.html">
+        <a class="nav-link collapsed" href="rapor.php">
           <img src="assets/img/5.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Rapor</span>
         </a>
       </li><!-- End Rapor Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="jadwal.html">
+        <a class="nav-link collapsed" href="jadwal-kelas.php">
           <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Jadwal</span>
         </a>
       </li><!-- End Jadwal Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="berita.html">
+        <a class="nav-link collapsed" href="berita-kelas.php">
           <img src="assets/img/7.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Berita</span>
         </a>
       </li><!-- End Berita Page Nav -->
-
       <li class="nav-item">
-        <a class="nav-link collapsed" href="admin-tu.html">
+        <a class="nav-link collapsed" href="admin-tu.php">
           <img src="assets/img/8.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Administrasi TU</span>
         </a>
@@ -171,57 +170,40 @@
           <span>Osis</span>
         </a>
       </li><!-- End Osis Page Nav -->
-
       <li class="nav-item">
-        <a class="nav-link collapsed" href="ekstrakulikuler.html">
+        <a class="nav-link collapsed" href="ekstrakulikuler.php">
           <img src="assets/img/10.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Ekstrakulikuler</span>
         </a>
       </li><!-- End Ekstrakulikuler Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="kantin.html">
+        <a class="nav-link collapsed" href="kantin.php">
           <img src="assets/img/11.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Kantin</span>
         </a>
       </li><!-- End Kantin Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;"><span>Koperasi</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="koperasi.php">
+          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;">
+          <span>Koperasi</span>
         </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Icons Nav -->
+      </li><!-- End Koperasi Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="fasilitas.html">
+        <a class="nav-link collapsed" href="fasilitas.php">
           <img src="assets/img/13.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Fasilitas</span>
         </a>
-      </li><!-- End Kantin Page Nav -->
+      </li><!-- End Fasilitas Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="perpustakaan.html">
+        <a class="nav-link collapsed" href="perpustakaan.php">
           <img src="assets/img/14.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Perpustakaan</span>
         </a>
-      </li><!-- End Kantin Page Nav -->
+      </li><!-- End Perpustakaan Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="mutasi.php">
@@ -229,29 +211,13 @@
           <span>Mutasi</span>
         </a>
       </li>  
-
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;"><span>Data Pengguna</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="perpustakaan.php">
+          <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;">
+          <span>Data Pengguna</span>
         </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Data Pengguna Nav -->
+      </li><!-- End Kantin Page Nav -->
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pendaftaranppdb.php">
@@ -259,9 +225,9 @@
           <span>PPDB</span>
         </a>
       </li><!-- End PPDB Page Nav -->
-      
+
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.php">
           <img src="assets/img/18.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Profil Pengguna</span>
         </a>
@@ -478,8 +444,8 @@
             </div>
       <!-- modal informasi siswa -->
       <div class="modal fade" id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content" style="width: 650px;">
             <div class="modal-header">
               
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -525,7 +491,7 @@
       </div>
       <!-- modal edit informasi siswa -->
       <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-scrollable"">
           <div class="modal-content" style="width: 650px;">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Informasi Siswa</h1>

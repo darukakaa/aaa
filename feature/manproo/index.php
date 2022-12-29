@@ -25,6 +25,7 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -35,9 +36,127 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
 
 <body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+
+    .wrapper {
+      width: 275px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .wrapper header {
+      display: flex;
+      align-items: center;
+      padding: 25px 30px 10px;
+      justify-content: space-between;
+    }
+
+    header .icons {
+      display: flex;
+    }
+
+    header .icons span {
+      height: 38px;
+      width: 38px;
+      margin: 0 1px;
+      cursor: pointer;
+      color: #878787;
+      text-align: center;
+      line-height: 38px;
+      font-size: 1.9rem;
+      user-select: none;
+      border-radius: 50%;
+    }
+
+    .icons span:last-child {
+      margin-right: -10px;
+    }
+
+    header .icons span:hover {
+      background: #f2f2f2;
+    }
+
+    header .current-date {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .calendar {
+      padding: 20px;
+    }
+
+    .calendar ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      text-align: center;
+    }
+
+    .calendar .days {
+      margin-bottom: 20px;
+    }
+
+    .calendar li {
+      color: #333;
+      width: calc(700% / 49);
+      font-size: 0.75rem;
+    }
+
+    .calendar .weeks li {
+      font-weight: 500;
+      cursor: default;
+    }
+
+    .calendar .days li {
+      z-index: 1;
+      cursor: pointer;
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .days li.inactive {
+      color: #aaa;
+    }
+
+    .days li.active {
+      color: #fff;
+    }
+
+    .days li::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 50%;
+      height: 30px;
+      width: 30px;
+      z-index: -1;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .days li.active::before {
+      background: #2C5C52;
+    }
+
+    .days li:not(.active):hover::before {
+      background: #f2f2f2;
+    }
+
+  </style>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -83,7 +202,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.php">
                 <i class="bi bi-person"></i>
                 <span>Profil</span>
               </a>
@@ -111,52 +230,52 @@
           <img src="assets/img/1.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Dashboard</span>
         </a>
-      </li><!-- End Dashboard Nav --> 
+      </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="absensi-siswa.html">
+        <a class="nav-link collapsed" href="absensi-siswa.php">
           <img src="assets/img/2.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Absensi</span>
         </a>
       </li><!-- End Absensi Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="kelas.html">
+        <a class="nav-link collapsed" href="kelas.php">
           <img src="assets/img/3.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Kelas</span>
         </a>
       </li><!-- End Kelas Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="penilaian-belajar.html">
+        <a class="nav-link collapsed" href="penilaian-belajar.php">
           <img src="assets/img/4.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Penilaian Belajar</span>
         </a>
       </li><!-- End Penilaian Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="rapor.html">
+        <a class="nav-link collapsed" href="rapor.php">
           <img src="assets/img/5.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Rapor</span>
         </a>
       </li><!-- End Rapor Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="jadwal.html">
+        <a class="nav-link collapsed" href="jadwal-kelas.php">
           <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Jadwal</span>
         </a>
       </li><!-- End Jadwal Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="berita.html">
+        <a class="nav-link collapsed" href="berita-kelas.php">
           <img src="assets/img/7.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Berita</span>
         </a>
       </li><!-- End Berita Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="admin-tu.html">
+        <a class="nav-link collapsed" href="admin-tu.php">
           <img src="assets/img/8.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Administrasi TU</span>
         </a>
@@ -170,95 +289,55 @@
       </li><!-- End Osis Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="ekstrakulikuler.html">
+        <a class="nav-link collapsed" href="ekstrakulikuler.php">
           <img src="assets/img/10.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Ekstrakulikuler</span>
         </a>
       </li><!-- End Ekstrakulikuler Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/11.png" alt="" style="width: 20px; margin-right:10px;"><span>Kantin</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="kantin.php">
+          <img src="assets/img/11.png" alt="" style="width: 20px; margin-right:10px;">
+          <span>Kantin</span>
         </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>General Tables</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Data Tables</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Mutasi Nav -->
+      </li><!-- End Kantin Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;"><span>Koperasi</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="koperasi.php">
+          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;">
+          <span>Koperasi</span>
         </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Icons Nav -->
+      </li><!-- End Koperasi Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="fasilitas.html">
+        <a class="nav-link collapsed" href="fasilitas.php">
           <img src="assets/img/13.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Fasilitas</span>
         </a>
-      </li><!-- End Kantin Page Nav -->
+      </li><!-- End Fasilitas Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="perpustakaan.html">
+        <a class="nav-link collapsed" href="perpustakaan.php">
           <img src="assets/img/14.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Perpustakaan</span>
         </a>
-      </li><!-- End Kantin Page Nav -->
+      </li><!-- End Perpustakaan Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="mutasi.php">
           <img src="assets/img/15.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Mutasi</span>
         </a>
-      </li>  
+      </li><!-- End Mutasi Page Nav -->
+
+      
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;"><span>Data Pengguna</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="perpustakaan.php">
+          <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;">
+          <span>Data Pengguna</span>
         </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Data Pengguna Nav -->
+      </li><!-- End Kantin Page Nav -->
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pendaftaranppdb.php">
@@ -266,23 +345,21 @@
           <span>PPDB</span>
         </a>
       </li><!-- End PPDB Page Nav -->
-      
+
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.php">
           <img src="assets/img/18.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Profil Pengguna</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="login.php">
           <img src="assets/img/19.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Keluar</span>
         </a>
       </li><!-- End Profile Page Nav -->
-
     </ul>
-
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
@@ -304,12 +381,12 @@
         <div class="col-lg-8">
           <div class="row">
 
-            <!-- Sales Card -->
-            <div class="col-xxl-4 col-md-6">
+            <!-- Siswa Card -->
+            <div class="col-xxl-6 col-md-6">
               <div class="card info-card sales-card">
 
                 <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <li class="dropdown-header text-start">
                       <h6>Filter</h6>
@@ -322,29 +399,29 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Sales <span>| Today</span></h5>
+                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Murid <span>| This Month</span></h5>
 
                   <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-cart"></i>
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                      <img src="assets/img/siswa.png">
                     </div>
                     <div class="ps-3">
-                      <h6>145</h6>
-                      <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                      <h6 style="color: #2C5C52; font-weight: bold;"> 1258</h6>
+                      <span class="text-muted small pt-2 ps-1">Orang</span>
 
                     </div>
                   </div>
                 </div>
 
               </div>
-            </div><!-- End Sales Card -->
+            </div><!-- End siswa Card -->
 
-            <!-- Revenue Card -->
-            <div class="col-xxl-4 col-md-6">
+            <!-- Guru Card -->
+            <div class="col-xxl-6 col-md-6">
               <div class="card info-card revenue-card">
 
                 <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <li class="dropdown-header text-start">
                       <h6>Filter</h6>
@@ -357,30 +434,30 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Revenue <span>| This Month</span></h5>
+                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Guru <span>| This Month</span></h5>
 
                   <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-currency-dollar"></i>
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                      <img src="assets/img/guru.png">
                     </div>
                     <div class="ps-3">
-                      <h6>$3,264</h6>
-                      <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                      <h6 style="color: #2C5C52; font-weight: bold;">1258</h6>
+                      <span class="text-muted small pt-2 ps-1">Orang</span>
 
                     </div>
                   </div>
                 </div>
 
               </div>
-            </div><!-- End Revenue Card -->
+            </div><!-- End Guru Card -->
 
 
-            <!-- Reports -->
+            <!-- Pegawai TU -->
             <div class="col-12">
               <div class="card">
 
                 <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <li class="dropdown-header text-start">
                       <h6>Filter</h6>
@@ -393,76 +470,30 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Reports <span>/Today</span></h5>
+                  <h5 class="card-title">Pegawai Tata Usaha <span>| This Month</span></h5>
 
-                  <!-- Line Chart -->
-                  <div id="reportsChart"></div>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                      <img src="assets/img/tu.png">
+                    </div>
+                    <div class="ps-3">
+                      <h6 style="color: #2C5C52; font-weight: bold;">30</h6>
+                      <span class="text-muted small pt-2 ps-1">Orang</span>
 
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      new ApexCharts(document.querySelector("#reportsChart"), {
-                        series: [{
-                          name: 'Sales',
-                          data: [31, 40, 28, 51, 42, 82, 56],
-                        }, {
-                          name: 'Revenue',
-                          data: [11, 32, 45, 32, 34, 52, 41]
-                        }, {
-                          name: 'Customers',
-                          data: [15, 11, 32, 18, 9, 24, 11]
-                        }],
-                        chart: {
-                          height: 350,
-                          type: 'area',
-                          toolbar: {
-                            show: false
-                          },
-                        },
-                        markers: {
-                          size: 4
-                        },
-                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
-                        fill: {
-                          type: "gradient",
-                          gradient: {
-                            shadeIntensity: 1,
-                            opacityFrom: 0.3,
-                            opacityTo: 0.4,
-                            stops: [0, 90, 100]
-                          }
-                        },
-                        dataLabels: {
-                          enabled: false
-                        },
-                        stroke: {
-                          curve: 'smooth',
-                          width: 2
-                        },
-                        xaxis: {
-                          type: 'datetime',
-                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-                        },
-                        tooltip: {
-                          x: {
-                            format: 'dd/MM/yy HH:mm'
-                          },
-                        }
-                      }).render();
-                    });
-                  </script>
-                  <!-- End Line Chart -->
+                    </div>
+                  </div>
 
                 </div>
 
               </div>
-            </div><!-- End Reports -->
+            </div><!-- End Pegawai TU -->
 
-            <!-- Recent Sales -->
-            <div class="col-12">
-              <div class="card recent-sales overflow-auto">
+            <!-- Pengawas Card -->
+            <div class="col-xxl-6 col-md-6">
+              <div class="card info-card sales-card">
 
                 <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <li class="dropdown-header text-start">
                       <h6>Filter</h6>
@@ -475,68 +506,29 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Recent Sales <span>| Today</span></h5>
+                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Pengawas <span>| This Month</span></h5>
 
-                  <table class="table table-borderless datatable">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Brandon Jacob</td>
-                        <td><a href="#" class="text-primary">At praesentium minu</a></td>
-                        <td>$64</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2147</a></th>
-                        <td>Bridie Kessler</td>
-                        <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
-                        <td>$47</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2049</a></th>
-                        <td>Ashleigh Langosh</td>
-                        <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
-                        <td>$147</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Angus Grady</td>
-                        <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                        <td>$67</td>
-                        <td><span class="badge bg-danger">Rejected</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Raheem Lehner</td>
-                        <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                        <td>$165</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                      <img src="assets/img/pengawas.png">
+                    </div>
+                    <div class="ps-3">
+                      <h6 style="color: #2C5C52; font-weight: bold;"> 10</h6>
+                      <span class="text-muted small pt-2 ps-1">Orang</span>
 
+                    </div>
+                  </div>
                 </div>
 
               </div>
-            </div><!-- End Recent Sales -->
+            </div><!-- End Pengawas Card -->
 
-            <!-- Top Selling -->
-            <div class="col-12">
-              <div class="card top-selling overflow-auto">
+            <!-- Pembina Card -->
+            <div class="col-xxl-6 col-md-6">
+              <div class="card info-card revenue-card">
 
                 <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <li class="dropdown-header text-start">
                       <h6>Filter</h6>
@@ -548,73 +540,114 @@
                   </ul>
                 </div>
 
-                <div class="card-body pb-0">
-                  <h5 class="card-title">Top Selling <span>| Today</span></h5>
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Pembina <span>| This Month</span></h5>
 
-                  <table class="table table-borderless">
-                    <thead>
-                      <tr>
-                        <th scope="col">Preview</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Sold</th>
-                        <th scope="col">Revenue</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
-                        <td>$64</td>
-                        <td class="fw-bold">124</td>
-                        <td>$5,828</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Exercitationem similique doloremque</a></td>
-                        <td>$46</td>
-                        <td class="fw-bold">98</td>
-                        <td>$4,508</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-3.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
-                        <td>$59</td>
-                        <td class="fw-bold">74</td>
-                        <td>$4,366</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
-                        <td>$32</td>
-                        <td class="fw-bold">63</td>
-                        <td>$2,016</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-5.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
-                        <td>$79</td>
-                        <td class="fw-bold">41</td>
-                        <td>$3,239</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                      <img src="assets/img/pembina.png">
+                    </div>
+                    <div class="ps-3">
+                      <h6 style="color: #2C5C52; font-weight: bold;">50</h6>
+                      <span class="text-muted small pt-2 ps-1">Orang</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Pembina Card -->
+
+            <!-- Pegawai Koperasi -->
+            <div class="col-12">
+              <div class="card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Pegawai Koperasi <span>| This Month</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                      <img src="assets/img/pegawai-koperasi.png">
+                    </div>
+                    <div class="ps-3">
+                      <h6 style="color: #2C5C52; font-weight: bold;">30</h6>
+                      <span class="text-muted small pt-2 ps-1">Orang</span>
+
+                    </div>
+                  </div>
 
                 </div>
 
               </div>
-            </div><!-- End Top Selling -->
+            </div><!-- End Pegawai Koperasi -->
+
+            <!-- News & Update -->
+            <div class="col-12">
+              <div class="card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">News & Update <span>| This Month</span></h5>
+                  <div class="news">
+                    <div class="post-item clearfix">
+                      <img src="assets/img/kotak.png" alt="">
+                      <h4><a href="#" style="color: #2C5C52; font-weight: bold;">Presiden Jokowi Bicara Peran Siswa dan Ekonomi Indonesia </a></h4>
+                      <p>Zekola.site, SURABAYA-Perekonomian Indonesia dinilai baik-baik saja di tengah ketidakpastian perekonomian global akibat pandemi dan perang...</p>
+                    </div>
+                    <div class="post-item clearfix">
+                      <img src="assets/img/kotak.png" alt="">
+                      <h4><a href="#" style="color: #2C5C52; font-weight: bold;">Presiden Jokowi Bicara Peran Siswa dan Ekonomi Indonesia </a></h4>
+                      <p>Zekola.site, SURABAYA-Perekonomian Indonesia dinilai baik-baik saja di tengah ketidakpastian perekonomian global akibat pandemi dan perang...</p>
+                    </div>
+                    <div class="post-item clearfix">
+                      <img src="assets/img/kotak.png" alt="">
+                      <h4><a href="#" style="color: #2C5C52; font-weight: bold;">Presiden Jokowi Bicara Peran Siswa dan Ekonomi Indonesia </a></h4>
+                      <p>Zekola.site, SURABAYA-Perekonomian Indonesia dinilai baik-baik saja di tengah ketidakpastian perekonomian global akibat pandemi dan perang...</p>
+                    </div>
+                  </div>
+                  <a href="#" style="color: #2C5C52; font-weight: bold;">
+                    <center>Lainnya>>></center>
+                  </a>
+                </div>
+
+              </div>
+            </div><!-- End News & Update -->
+
 
           </div>
         </div><!-- End Left side columns -->
 
         <!-- Right side columns -->
         <div class="col-lg-4">
-
-          <!-- Recent Activity -->
+          <!-- Kalender -->
           <div class="card">
             <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <a class="icon" href="#" data-bs-toggle="dropdown"></a>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                 <li class="dropdown-header text-start">
                   <h6>Filter</h6>
@@ -626,291 +659,69 @@
               </ul>
             </div>
 
-            <div class="card-body">
-              <h5 class="card-title">Recent Activity <span>| Today</span></h5>
-
-              <div class="activity">
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">32 min</div>
-                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
-                  <div class="activity-content">
-                    Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a> beatae
+            <div class="card-body pb-0 mt-3">
+              <div class="wrapper">
+                <header>
+                  <p class="current-date"></p>
+                  <div class="icons">
+                    <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                    <span id="next" class="material-symbols-rounded">chevron_right</span>
                   </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">56 min</div>
-                  <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
-                  <div class="activity-content">
-                    Voluptatem blanditiis blanditiis eveniet
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">2 hrs</div>
-                  <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
-                  <div class="activity-content">
-                    Voluptates corrupti molestias voluptatem
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">1 day</div>
-                  <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
-                  <div class="activity-content">
-                    Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">2 days</div>
-                  <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
-                  <div class="activity-content">
-                    Est sit eum reiciendis exercitationem
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">4 weeks</div>
-                  <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
-                  <div class="activity-content">
-                    Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
-                  </div>
-                </div><!-- End activity item-->
-
+                </header>
+                <div class="calendar">
+                  <ul class="weeks">
+                    <li>Min</li>
+                    <li>Sen</li>
+                    <li>Sel</li>
+                    <li>Rab</li>
+                    <li>Kam</li>
+                    <li>Jum</li>
+                    <li>Sab</li>
+                  </ul>
+                  <ul class="days"></ul>
+                </div>
               </div>
-
-            </div>
-          </div><!-- End Recent Activity -->
-
-          <!-- Budget Report -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
             </div>
 
             <div class="card-body pb-0">
-              <h5 class="card-title">Budget Report <span>| This Month</span></h5>
-
-              <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
-
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
-                    legend: {
-                      data: ['Allocated Budget', 'Actual Spending']
-                    },
-                    radar: {
-                      // shape: 'circle',
-                      indicator: [{
-                          name: 'Sales',
-                          max: 6500
-                        },
-                        {
-                          name: 'Administration',
-                          max: 16000
-                        },
-                        {
-                          name: 'Information Technology',
-                          max: 30000
-                        },
-                        {
-                          name: 'Customer Support',
-                          max: 38000
-                        },
-                        {
-                          name: 'Development',
-                          max: 52000
-                        },
-                        {
-                          name: 'Marketing',
-                          max: 25000
-                        }
-                      ]
-                    },
-                    series: [{
-                      name: 'Budget vs spending',
-                      type: 'radar',
-                      data: [{
-                          value: [4200, 3000, 20000, 35000, 50000, 18000],
-                          name: 'Allocated Budget'
-                        },
-                        {
-                          value: [5000, 14000, 28000, 26000, 42000, 21000],
-                          name: 'Actual Spending'
-                        }
-                      ]
-                    }]
-                  });
-                });
-              </script>
-
-            </div>
-          </div><!-- End Budget Report -->
-
-          <!-- Website Traffic -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">Website Traffic <span>| Today</span></h5>
-
-              <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
-
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  echarts.init(document.querySelector("#trafficChart")).setOption({
-                    tooltip: {
-                      trigger: 'item'
-                    },
-                    legend: {
-                      top: '5%',
-                      left: 'center'
-                    },
-                    series: [{
-                      name: 'Access From',
-                      type: 'pie',
-                      radius: ['40%', '70%'],
-                      avoidLabelOverlap: false,
-                      label: {
-                        show: false,
-                        position: 'center'
-                      },
-                      emphasis: {
-                        label: {
-                          show: true,
-                          fontSize: '18',
-                          fontWeight: 'bold'
-                        }
-                      },
-                      labelLine: {
-                        show: false
-                      },
-                      data: [{
-                          value: 1048,
-                          name: 'Search Engine'
-                        },
-                        {
-                          value: 735,
-                          name: 'Direct'
-                        },
-                        {
-                          value: 580,
-                          name: 'Email'
-                        },
-                        {
-                          value: 484,
-                          name: 'Union Ads'
-                        },
-                        {
-                          value: 300,
-                          name: 'Video Ads'
-                        }
-                      ]
-                    }]
-                  });
-                });
-              </script>
-
-            </div>
-          </div><!-- End Website Traffic -->
-
-          <!-- News & Updates Traffic -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
-
+              <h5 class="card-title">Kalender <span>| This Month</span></h5>
               <div class="news">
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-1.jpg" alt="">
-                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-                  <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
+                  <img src="assets/img/kotak.png" alt="" style="width: 50px; margin-left: 20px;">
+                  <h4><a href="#" style="color: #2C5C52; font-weight: bold; ">Soccer Competition</a></h4>
+                  <p>20 March 2023 | 09.00 AM</p>
                 </div>
-
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-2.jpg" alt="">
-                  <h4><a href="#">Quidem autem et impedit</a></h4>
-                  <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
+                  <img src="assets/img/kotak.png" alt="" style="width: 50px; margin-left: 20px;">
+                  <h4><a href="#" style="color: #2C5C52; font-weight: bold; ">Soccer Competition</a></h4>
+                  <p>20 March 2023 | 09.00 AM</p>
                 </div>
-
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-3.jpg" alt="">
-                  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
+                  <img src="assets/img/kotak.png" alt="" style="width: 50px; margin-left: 20px;">
+                  <h4><a href="#" style="color: #2C5C52; font-weight: bold; ">Soccer Competition</a></h4>
+                  <p>20 March 2023 | 09.00 AM</p>
                 </div>
-
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-4.jpg" alt="">
-                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
+                  <img src="assets/img/kotak.png" alt="" style="width: 50px; margin-left: 20px;">
+                  <h4><a href="#" style="color: #2C5C52; font-weight: bold; ">Soccer Competition</a></h4>
+                  <p>20 March 2023 | 09.00 AM</p>
                 </div>
+              </div>
 
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-5.jpg" alt="">
-                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
-                </div>
-
-              </div><!-- End sidebar recent posts-->
-
+              <a href="#" style="color: #2C5C52; font-weight: bold; ">
+                <center>Lainnya>>></center>
+              </a>
             </div>
-          </div><!-- End News & Updates -->
-
+          </div><!-- End Kalender -->
         </div><!-- End Right side columns -->
-
       </div>
     </section>
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>Zekola</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by Skuitwot
-    </div>
-  </footer><!-- End Footer -->
-
+  <?php
+  include "layouts/footer.php";
+  ?>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -925,6 +736,64 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const daysTag = document.querySelector(".days"),
+    currentDate = document.querySelector(".current-date"),
+    prevNextIcon = document.querySelectorAll(".icons span");
+
+    // getting new date, current year and month
+    let date = new Date(),
+    currYear = date.getFullYear(),
+    currMonth = date.getMonth();
+
+    // storing full name of all months in array
+    const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli",
+      "Agustus", "September", "Oktober", "November", "Desember"
+      ];
+
+    const renderCalendar = () => {
+      let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
+        lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
+        lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // getting last day of month
+        lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
+        let liTag = "";
+
+      for (let i = firstDayofMonth; i > 0; i--) { // creating li of previous month last days
+        liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+      }
+
+      for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
+        // adding active class to li if the current day, month, and year matched
+        let isToday = i === date.getDate() && currMonth === new Date().getMonth() &&
+        currYear === new Date().getFullYear() ? "active" : "";
+        liTag += `<li class="${isToday}">${i}</li>`;
+      }
+
+      for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
+        liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+      }
+      currentDate.innerText = `${months[currMonth]} ${currYear}`; // passing current mon and yr as currentDate text
+      daysTag.innerHTML = liTag;
+    }
+    renderCalendar();
+
+    prevNextIcon.forEach(icon => { // getting prev and next icons
+      icon.addEventListener("click", () => { // adding click event on both icons
+        // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
+        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
+        if (currMonth < 0 || currMonth > 11) { // if current month is less than 0 or greater than 11
+          // creating a new date of current year & month and pass it as date value
+          date = new Date(currYear, currMonth);
+          currYear = date.getFullYear(); // updating current year with new date year
+          currMonth = date.getMonth(); // updating current month with new date month
+        } else {
+          date = new Date(); // pass the current date as date value
+        }
+        renderCalendar(); // calling renderCalendar function
+      });
+    });
+  </script>
 
 </body>
 

@@ -87,7 +87,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.php">
                 <i class="bi bi-person"></i>
                 <span>Profil</span>
               </a>
@@ -107,172 +107,143 @@
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
-    <ul class="sidebar-nav" id="sidebar-nav">
+  <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
-          <img src="assets/img/1.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Dashboard</span>
-        </a>
-      </li><!-- End Dashboard Nav --> 
+<li class="nav-item">
+  <a class="nav-link " href="index.php">
+    <!-- <i class="bi bi-grid"></i> -->
+    <img src="assets/img/1.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Dashboard</span>
+  </a>
+</li><!-- End Dashboard Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="absensi-siswa.html">
-          <img src="assets/img/2.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Absensi</span>
-        </a>
-      </li><!-- End Absensi Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="absensi-siswa.php">
+    <img src="assets/img/2.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Absensi</span>
+  </a>
+</li><!-- End Absensi Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="kelas.html">
-          <img src="assets/img/3.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Kelas</span>
-        </a>
-      </li><!-- End Kelas Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="kelas.php">
+    <img src="assets/img/3.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Kelas</span>
+  </a>
+</li><!-- End Kelas Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="penilaian-belajar.html">
-          <img src="assets/img/4.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Penilaian Belajar</span>
-        </a>
-      </li><!-- End Penilaian Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="penilaian-belajar.php">
+    <img src="assets/img/4.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Penilaian Belajar</span>
+  </a>
+</li><!-- End Penilaian Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="rapor.html">
-          <img src="assets/img/5.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Rapor</span>
-        </a>
-      </li><!-- End Rapor Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="rapor.php">
+    <img src="assets/img/5.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Rapor</span>
+  </a>
+</li><!-- End Rapor Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="jadwal.html">
-          <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Jadwal</span>
-        </a>
-      </li><!-- End Jadwal Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="jadwal-kelas.php">
+    <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Jadwal</span>
+  </a>
+</li><!-- End Jadwal Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="berita.html">
-          <img src="assets/img/7.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Berita</span>
-        </a>
-      </li><!-- End Berita Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="berita-kelas.php">
+    <img src="assets/img/7.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Berita</span>
+  </a>
+</li><!-- End Berita Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="admin-tu.html">
-          <img src="assets/img/8.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Administrasi TU</span>
-        </a>
-      </li><!-- End Admin TU Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="admin-tu.php">
+    <img src="assets/img/8.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Administrasi TU</span>
+  </a>
+</li><!-- End Admin TU Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="osis.php">
-          <img src="assets/img/9.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Osis</span>
-        </a>
-      </li><!-- End Osis Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="osis.php">
+    <img src="assets/img/9.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Osis</span>
+  </a>
+</li><!-- End Osis Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="ekstrakulikuler.html">
-          <img src="assets/img/10.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Ekstrakulikuler</span>
-        </a>
-      </li><!-- End Ekstrakulikuler Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="ekstrakulikuler.php">
+    <img src="assets/img/10.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Ekstrakulikuler</span>
+  </a>
+</li><!-- End Ekstrakulikuler Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="kantin.html">
-          <img src="assets/img/11.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Kantin</span>
-        </a>
-      </li><!-- End Kantin Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="kantin.php">
+    <img src="assets/img/11.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Kantin</span>
+  </a>
+</li><!-- End Kantin Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;"><span>Koperasi</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Icons Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="koperasi.php">
+    <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Koperasi</span>
+  </a>
+</li><!-- End Koperasi Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="fasilitas.html">
-          <img src="assets/img/13.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Fasilitas</span>
-        </a>
-      </li><!-- End Kantin Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="fasilitas.php">
+    <img src="assets/img/13.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Fasilitas</span>
+  </a>
+</li><!-- End Fasilitas Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="perpustakaan.html">
-          <img src="assets/img/14.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Perpustakaan</span>
-        </a>
-      </li><!-- End Kantin Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="perpustakaan.php">
+    <img src="assets/img/14.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Perpustakaan</span>
+  </a>
+</li><!-- End Perpustakaan Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="mutasi.php">
-          <img src="assets/img/15.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Mutasi</span>
-        </a>
-      </li>  
+<li class="nav-item">
+  <a class="nav-link collapsed" href="mutasi.php">
+    <img src="assets/img/15.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Mutasi</span>
+  </a>
+</li><!-- End Mutasi Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;"><span>Data Pengguna</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Data Pengguna Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link " href="pendaftaranppdb.php">
-          <img src="assets/img/17.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>PPDB</span>
-        </a>
-      </li><!-- End PPDB Page Nav -->
-      
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <img src="assets/img/18.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Profil Pengguna</span>
-        </a>
-      </li><!-- End Profile Page Nav -->
+<li class="nav-item">
+  <a class="nav-link collapsed" href="perpustakaan.php">
+    <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Data Pengguna</span>
+  </a>
+</li><!-- End Kantin Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <img src="assets/img/19.png" alt="" style="width: 20px; margin-right:10px;">
-          <span>Keluar</span>
-        </a>
-      </li><!-- End Profile Page Nav -->
+
+<li class="nav-item">
+  <a class="nav-link collapsed" href="pendaftaranppdb.php">
+    <img src="assets/img/17.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>PPDB</span>
+  </a>
+</li><!-- End PPDB Page Nav -->
+
+<li class="nav-item">
+  <a class="nav-link collapsed" href="users-profile.php">
+    <img src="assets/img/18.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Profil Pengguna</span>
+  </a>
+</li><!-- End Profile Page Nav -->
+
+<li class="nav-item">
+  <a class="nav-link collapsed" href="login.php">
+    <img src="assets/img/19.png" alt="" style="width: 20px; margin-right:10px;">
+    <span>Keluar</span>
+  </a>
+</li><!-- End Profile Page Nav -->
 
     </ul>
 
@@ -284,15 +255,17 @@
       <h1>Pendaftaran Peserta Didik Baru</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-          <li class="breadcrumb-item">PPDB</li>
-          <li class="breadcrumb-item active">Pendaftaran</li>
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item">PPDB</li>
+            <li class="breadcrumb-item active">Pendaftaran</li>
         </ol>
       </nav>
     </div>
+    <!-- End Page Title -->
+
     <div class="d-grid gap-2 d-md-block">
-       <a class="btn" style="text-decoration: none; margin-right: 10px; box-shadow: 2px 2px 1px grey; background-color: #2C5C52; color: white; border-radius: 50px;" href="pendaftaranppdb.php">Pendaftaran</a>
-      <a class="btn" style="text-decoration: none;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="pengumumanppdb.php">pengumuman</a>
+        <a class="btn" style="text-decoration: none; margin-right: 10px; box-shadow: 2px 2px 1px grey; background-color: #2C5C52; color: white; border-radius: 50px;" href="pendaftaranppdb.php">Pendaftaran</a>
+        <a class="btn" style="text-decoration: none;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="pengumumanppdb.php">pengumuman</a>
     </div>
 
     <div class="container table-responsive">
@@ -300,7 +273,7 @@
           <div class="col-lg-12 mx-auto">
             <div class="card rounded shadow border-0">
               <div class="card-body p-5 bg-white rounded">
-                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahsiswa">Tambah Pendaftar</button>
+                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambah">Tambah Pendaftar</button>
                 <div class="table-responsive">
                   <table id="example" class="table table-striped " style="width:100%">
                     
@@ -347,17 +320,22 @@
         </div>
       </div>
     
-            <!-- modal tambah siswa -->
-            <div class="modal fade" id="tambahsiswa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+            <!-- modal tambah pendaftar -->
+            <div class="modal fade" id="tambah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-dialog-scrollable">
                 <div class="modal-content" style="width: 650px;">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Siswa</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <form>
-                      <div class="row mb-3">
+                  <h2 style="text-align:center;">Informasi Pengguna</h2>
+                  <div class="  row mb-3 text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                    <h8>
+                      Data Pribadi Siswa
+                    </h8>
+                  </div>
+                  <form>
+                      <div class="row mb-3 ">
                         <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto Profil</label>
                         <div class="col-md-8 col-lg-9">
                           <img src="assets/img/profile-img.jpg" alt="Profile">
@@ -381,14 +359,12 @@
                           <input name="nisn" type="text" class="form-control" id="nisn" value="Mirna Milasari">
                         </div>
                       </div>
-      
                       <div class="row mb-3">
-                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">TTL</label>
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">NIK</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="nisn" type="text" class="form-control" id="nisn" value="">
+                          <input name="nik" type="text" class="form-control" id="nik" value="">
                         </div>
                       </div>
-      
                       <div class="row mb-3">
                         <label for="company" class="col-md-4 col-lg-3 col-form-label">Jenis Kelamin</label>
                         <div class="col-md-8 col-lg-9">
@@ -415,14 +391,16 @@
                           </select>
                         </div>
                       </div>
-      
                       <div class="row mb-3">
-                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">No. Telepon</label>
-                        <div class="col-md-8 col-lg-9">
-                          <input name="telepon" type="text" class="form-control" id="Telepon" value="">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tempat, Tanggal Lahir</label>
+                        <div class="col-md-4 ">
+                          <input name="ttl" type="text" class="form-control" id="ttl" value="">
+                        </div>
+                        <div class="col-md-5 ">
+                          <input type="date" class="form-control">
                         </div>
                       </div>
-      
+
                       <div class="row mb-3">
                         <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Email</label>
                         <div class="col-md-8 col-lg-9">
@@ -431,26 +409,232 @@
                       </div>
       
                       <div class="row mb-3">
-                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Siswa</label>
+                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">No.Hp/Whatsapp</label>
                         <div class="col-md-8 col-lg-9">
-                          <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
-                        </div>
-                      </div>
-                      
-                      <div class="row mb-3">
-                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Nama Wali Murid</label>
-                        <div class="col-md-8 col-lg-9">
-                          <input name="alamatsiswa" type="text" class="form-control" id="alamatsiswa" value="">
+                          <input name="telepon" type="text" class="form-control" id="Telepon" value="">
                         </div>
                       </div>
       
                       <div class="row mb-3">
-                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Wali Murid</label>
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat</label>
                         <div class="col-md-8 col-lg-9">
                           <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
                         </div>
                       </div>
-      
+                      <div class="  row mb-3 text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                        <h8>
+                          Data Pendaftar
+                        </h8>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Gelombang</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih Gelombang --</option>
+                            <option value="1">Rapot</option>
+                            <option value="2">Undangan</option>
+                            <option value="3">Tes</option>
+                          </select>
+                        </div>
+                      </div>  
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pilihan 1</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih  --</option>
+                            <option value="1">IPA</option>
+                            <option value="2">IPS</option>
+                            <option value="3">BAHASA</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pilihan 2</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih  --</option>
+                            <option value="1">IPA</option>
+                            <option value="2">IPS</option>
+                            <option value="3">BAHASA</option>
+                          </select>
+                        </div>
+                      </div> 
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pilihan 3</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih  --</option>
+                            <option value="1">IPA</option>
+                            <option value="2">IPS</option>
+                            <option value="3">BAHASA</option>
+                          </select>
+                        </div>
+                      </div>    
+                      <div class="  row mb-3  text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                        <h8>
+                          Data Orang Tua
+                        </h8>
+                      </div> 
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Ayah</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pekerjaan Ayah</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih  --</option>
+                            <option value="1">Guru/PNS</option>
+                            <option value="2">Swasta</option>
+                            <option value="3">Wirausaha</option>
+                            <option value="4">Petani</option>
+                            <option value="5">Lain-Lain</option>
+                          </select>
+                        </div>
+                      </div>  
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">No.HP/Whatsapp Ayah</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pendapatan</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih  --</option>
+                            <option value="1">Rp. 500.000-1.000.000</option>
+                            <option value="2">Rp. 1.000.000-2.000.000</option>
+                            <option value="3">Rp. 2.000.000-3.000.000</option>
+                            <option value="4">Rp. 3.000.000-4.000.000</option>
+                            <option value="5">Rp. 5.000.000-5.000.000</option>
+                          </select>
+                        </div>
+                      </div>  
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Ibu</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pekerjaan Ibu</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih  --</option>
+                            <option value="1">Guru/PNS</option>
+                            <option value="2">Ibu Rumah Tangga</option>
+                            <option value="2">Swasta</option>
+                            <option value="3">Wirausaha</option>
+                            <option value="4">Petani</option>
+                            <option value="5">Lain-Lain</option>
+                          </select>
+                        </div>
+                      </div>  
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">No.HP/Whatsapp Ibu</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pendapatan</label>
+                        <div class="col-md-8 col-lg-9">
+                          <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                            <option selected>-- Pilih  --</option>
+                            <option value="1">Rp. 500.000-1.000.000</option>
+                            <option value="2">Rp. 1.000.000-2.000.000</option>
+                            <option value="3">Rp. 2.000.000-3.000.000</option>
+                            <option value="4">Rp. 3.000.000-4.000.000</option>
+                            <option value="5">Rp. 5.000.000-5.000.000</option>
+                          </select>
+                        </div>
+                      </div>  
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggungan Keluarga</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Slip Gaji</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Kartu Keluarga</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                        </div>
+                      </div>
+                      <div class=" row mb-3 text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                        <h8>
+                          Data Sekolah Asal & Nilai
+                        </h8>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Sekolah Asal</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 1</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 2</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 3</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 4</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 5</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 6</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Raport</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Prestasi(jika ada)</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Ijzah (jika ada)</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                        </div>
+                      </div>
                       <div class="text-center">
                         <button type="submit" class="btn btn-success">Simpan</button>
                       </div>
@@ -459,74 +643,176 @@
                 </div>
               </div>
             </div>
-      <!-- modal informasi siswa -->
+      <!-- modal informasi  -->
       <div class="modal fade" id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content" style="width: 650px;">
             <div class="modal-header">
               
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <h2 style="text-align:center;">Informasi Siswa</h1>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Foto Pofil <img src="assets/img/profile-img.jpg" alt="" width="100" height="100" ></div>
+            <div class="modal-body" >
+              <h2 style="text-align:center;">Informasi Siswa</h2>
+              <div class=" text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                <h8>
+                  Data Pribadi
+                </h8>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Nama Lengkap  </div>
+                <div class="col-lg-6 col-md-8 label mb-4">Foto Pofil <img src="assets/img/profile-img.jpg" alt="" width="100" height="100" style="margin-left: 150px;" ></div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">NISN </div>
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Lengkap :
+               </div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Tempat, Tanggal Lahir </div>
+                <div class="col-lg-6 col-md-8 label mb-4">NISN :</div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Jenis Kelamin </div>
+                <div class="col-lg-6 col-md-8 label mb-4">NIK :</div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Agama </div>
+                <div class="col-lg-6 col-md-8 label mb-4">Jenis Kelamin :</div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Jabatan di Organisasi </div>
+                <div class="col-lg-6 col-md-8 label mb-4">Agama :</div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">No. Telepon </div>
+                <div class="col-lg-6 col-md-8 label mb-4">Tempat, Tanggal Lahir :</div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Email </div>
+                <div class="col-lg-6 col-md-8 label mb-4">Email :</div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Nama Wali Murid </div>
+                <div class="col-lg-6 col-md-8 label mb-4">No.Hp/Whastapp :</div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-8 label mb-4">Alamat Wali Murid </div>
+                <div class="col-lg-6 col-md-8 label mb-4">Email :</div>
               </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Wali Murid :</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Alamat :</div>
+              </div>
+              <div class=" text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                <h8>
+                  Data Pendaftar
+                </h8>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Gelombang :</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Pilihan 1 :</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Pilihan 2 :</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Pilihan 3 :</div>
+              </div>
+              <div class=" text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                <h8>
+                  Data Orang Tua
+                </h8>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Ayah </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Pekerjaan Ayah </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">No.Hp/Whatsapp Ayah </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Pendapatan </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Ibu </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Pekerjaan Ibu </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">No.Hp/Whatsapp Ibu </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Pendapatan </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Tanggungan Keluarga </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Slip Gaji  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Kartu Keluaraga </div>
+              </div>
+              <div class=" text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                <h8>
+                  Data Sekolah Asal & Nilai
+                </h8>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Nama Sekolah Asal </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Semester 1 </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Semester 2 </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Semester 3 </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Semester 4 </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Semester 5 </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Semester 6 </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Raport </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Prestasi(jika ada) </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-8 label mb-4">Ijazah (jika ada) </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-success">Simpan</button>
+              </div>
+              </div>
+              
+
             </div>
-          </div>
         </div>
       </div>
-      <!-- modal edit informasi siswa -->
+      <!-- modal Edit informasi Siswa -->
       <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content" style="width: 650px;">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Informasi Siswa</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+            <h2 style="text-align:center;">Edit Informasi Siswa</h2>
+            
               <form>
-                <div class="row mb-3">
-                  <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto Profil</label>
-                  <div class="col-md-8 col-lg-9">
-                    <img src="assets/img/profile-img.jpg" alt="Profile">
-                    <div class="pt-2">
-                      <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
-                      <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
-                    </div>
-                  </div>
+              <div class="  row mb-3 text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                <h8>
+                  Data Pribadi Siswa
+                </h8>
+              </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-8 label mb-4">Foto Pofil <img src="assets/img/profile-img.jpg" alt="" width="100" height="100" style="margin-left: 150px;" ></div>
                 </div>
-
                 <div class="row mb-3">
                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
                   <div class="col-md-8 col-lg-9">
@@ -537,14 +823,13 @@
                 <div class="row mb-3">
                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">NISN</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="nisn" type="text" class="form-control" id="nisn" value="Mirna Milasari">
+                    <input name="nisn" type="text" class="form-control" id="nisn" value="099765524">
                   </div>
                 </div>
-
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">TTL</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">NIK</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="nisn" type="text" class="form-control" id="nisn" value="">
+                    <input name="nik" type="text" class="form-control" id="nik" value="00099197716">
                   </div>
                 </div>
 
@@ -561,7 +846,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="row mb-3">
                   <label for="Job" class="col-md-4 col-lg-3 col-form-label">Agama</label>
                   <div class="col-md-8 col-lg-9">
@@ -574,41 +858,255 @@
                     </select>
                   </div>
                 </div>
-
                 <div class="row mb-3">
-                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">No. Telepon</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input name="telepon" type="text" class="form-control" id="Telepon" value="">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tempat, Tanggal Lahir</label>
+                  <div class="col-md-4 ">
+                    <input name="ttl" type="text" class="form-control" id="ttl" value="Sidoarjo">
+                  </div>
+                  <div class="col-md-5 ">
+                    <input type="date" class="form-control">
                   </div>
                 </div>
-
                 <div class="row mb-3">
                   <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Email</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="email" type="email" class="form-control" id="Email" value="">
+                    <input name="email" type="email" class="form-control" id="Email" value="mirna12@sis.zekola.site">
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Siswa</label>
+                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">No.Hp/Whatsapp</label>
                   <div class="col-md-8 col-lg-9">
-                    <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
-                  </div>
-                </div>
-                
-                <div class="row mb-3">
-                  <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Nama Wali Murid</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input name="alamatsiswa" type="text" class="form-control" id="alamatsiswa" value="">
+                    <input name="telepon" type="text" class="form-control" id="Telepon" value="086545667654">
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Wali Murid</label>
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat</label>
                   <div class="col-md-8 col-lg-9">
                     <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
                   </div>
                 </div>
+                <div class="  row mb-3 text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                <h8>
+                  Data Pendaftaran
+                </h8>
+                </div>
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Gelombang</label>
+                  <div class="col-md-8 col-lg-9">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih Gelombang --</option>
+                      <option value="1">Rapot</option>
+                      <option value="2">Undangan</option>
+                      <option value="3">Tes</option>
+                    </select>
+                  </div>
+                </div>  
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pilihan 1</label>
+                  <div class="col-md-8 col-lg-9">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih  --</option>
+                      <option value="1">IPA</option>
+                      <option value="2">IPS</option>
+                      <option value="3">BAHASA</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pilihan 2</label>
+                  <div class="col-md-8 col-lg-9">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih  --</option>
+                      <option value="1">IPA</option>
+                      <option value="2">IPS</option>
+                      <option value="3">BAHASA</option>
+                    </select>
+                  </div>
+                </div> 
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pilihan 3</label>
+                  <div class="col-md-8 col-lg-9">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih  --</option>
+                      <option value="1">IPA</option>
+                      <option value="2">IPS</option>
+                      <option value="3">BAHASA</option>
+                    </select>
+                  </div>
+                </div>   
+                <div class="  row mb-3  text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                  <h8>
+                    Data Orang Tua
+                  </h8>
+                </div> 
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Ayah</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pekerjaan Ayah</label>
+                  <div class="col-md-8 col-lg-9">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih  --</option>
+                      <option value="1">Guru/PNS</option>
+                      <option value="2">Swasta</option>
+                      <option value="3">Wirausaha</option>
+                      <option value="4">Petani</option>
+                      <option value="5">Lain-Lain</option>
+                    </select>
+                  </div>
+                </div>  
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">No.HP/Whatsapp Ayah</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="0997555565">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pendapatan</label>
+                  <div class="col-md-8 col-lg-9">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih  --</option>
+                      <option value="1">Rp. 500.000-1.000.000</option>
+                      <option value="2">Rp. 1.000.000-2.000.000</option>
+                      <option value="3">Rp. 2.000.000-3.000.000</option>
+                      <option value="4">Rp. 3.000.000-4.000.000</option>
+                      <option value="5">Rp. 5.000.000-5.000.000</option>
+                    </select>
+                  </div>
+                </div>  
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Ibu</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pekerjaan Ibu</label>
+                  <div class="col-md-8 col-lg-9">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih  --</option>
+                      <option value="1">Guru/PNS</option>
+                      <option value="2">Ibu Rumah Tangga</option>
+                      <option value="2">Swasta</option>
+                      <option value="3">Wirausaha</option>
+                      <option value="4">Petani</option>
+                      <option value="5">Lain-Lain</option>
+                    </select>
+                  </div>
+                </div>  
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">No.HP/Whatsapp Ibu</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Pendapatan</label>
+                  <div class="col-md-8 col-lg-9">
+                    <select class="form-select" aria-label="Default select example" style="text-align: center;color:rgba(0, 0, 0, 0.5)">
+                      <option selected>-- Pilih  --</option>
+                      <option value="1">Rp. 500.000-1.000.000</option>
+                      <option value="2">Rp. 1.000.000-2.000.000</option>
+                      <option value="3">Rp. 2.000.000-3.000.000</option>
+                      <option value="4">Rp. 3.000.000-4.000.000</option>
+                      <option value="5">Rp. 5.000.000-5.000.000</option>
+                    </select>
+                  </div>
+                </div>  
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggungan Keluarga</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="4">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Slip Gaji</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Kartu Keluarga</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                  </div>
+                </div>
+                <div class=" row mb-3 text-wrap" style="width: 520px; margin-left: 3rem; background-color: #2C5C52; color: white; border-radius: 5px;">
+                  <h8>
+                    Data Sekolah Asal & Nilai
+                  </h8>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Sekolah Asal</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="SMP NEGERI 2 SURABAYA">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 1</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="99">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 2</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="87">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 3</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="88">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 4</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="98">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 5</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="99">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Semester 6</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="98">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Raport</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Prestasi(jika ada)</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Ijzah (jika ada)</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="alamat" class="form-control" id="about" style="height: 100px" value="input class="form-control" type="file">
+                  </div>
+                </div>
+                </div>
+               
+      
+      
+                  </div>
+                </div>    
 
                 <div class="text-center">
                   <button type="submit" class="btn btn-success">Simpan</button>

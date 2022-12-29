@@ -87,7 +87,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.php">
                 <i class="bi bi-person"></i>
                 <span>Profil</span>
               </a>
@@ -109,57 +109,58 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link collapsed" href="index.php">
+          <!-- <i class="bi bi-grid"></i> -->
           <img src="assets/img/1.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Dashboard</span>
         </a>
-      </li><!-- End Dashboard Nav --> 
+      </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="absensi-siswa.html">
+        <a class="nav-link collapsed" href="absensi-siswa.php">
           <img src="assets/img/2.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Absensi</span>
         </a>
       </li><!-- End Absensi Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="kelas.html">
+        <a class="nav-link collapsed" href="kelas.php">
           <img src="assets/img/3.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Kelas</span>
         </a>
       </li><!-- End Kelas Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="penilaian-belajar.html">
+        <a class="nav-link collapsed" href="penilaian-belajar.php">
           <img src="assets/img/4.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Penilaian Belajar</span>
         </a>
       </li><!-- End Penilaian Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="rapor.html">
+        <a class="nav-link collapsed" href="rapor.php">
           <img src="assets/img/5.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Rapor</span>
         </a>
       </li><!-- End Rapor Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="jadwal.html">
+        <a class="nav-link collapsed" href="jadwal-kelas.php">
           <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Jadwal</span>
         </a>
       </li><!-- End Jadwal Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="berita.html">
+        <a class="nav-link collapsed" href="berita-kelas.php">
           <img src="assets/img/7.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Berita</span>
         </a>
       </li><!-- End Berita Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="admin-tu.html">
+        <a class="nav-link collapsed" href="admin-tu.php">
           <img src="assets/img/8.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Administrasi TU</span>
         </a>
@@ -173,85 +174,55 @@
       </li><!-- End Osis Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="ekstrakulikuler.html">
+        <a class="nav-link collapsed" href="ekstrakulikuler.php">
           <img src="assets/img/10.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Ekstrakulikuler</span>
         </a>
       </li><!-- End Ekstrakulikuler Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="kantin.html">
+        <a class="nav-link collapsed" href="kantin.php">
           <img src="assets/img/11.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Kantin</span>
         </a>
       </li><!-- End Kantin Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;"><span>Koperasi</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="koperasi.php">
+          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;">
+          <span>Koperasi</span>
         </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Icons Nav -->
+      </li><!-- End Koperasi Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="fasilitas.html">
+        <a class="nav-link collapsed" href="fasilitas.php">
           <img src="assets/img/13.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Fasilitas</span>
         </a>
-      </li><!-- End Kantin Page Nav -->
+      </li><!-- End Fasilitas Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="perpustakaan.html">
+        <a class="nav-link collapsed" href="perpustakaan.php">
           <img src="assets/img/14.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Perpustakaan</span>
         </a>
-      </li><!-- End Kantin Page Nav -->
+      </li><!-- End Perpustakaan Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link " href="mutasi.php">
           <img src="assets/img/15.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Mutasi</span>
         </a>
-      </li>  
+      </li><!-- End Mutasi Page Nav -->
 
+      
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;"><span>Data Pengguna</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="perpustakaan.php">
+          <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;">
+          <span>Data Pengguna</span>
         </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Data Pengguna Nav -->
+      </li><!-- End Kantin Page Nav -->
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pendaftaranppdb.php">
@@ -259,16 +230,16 @@
           <span>PPDB</span>
         </a>
       </li><!-- End PPDB Page Nav -->
-      
+
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.php">
           <img src="assets/img/18.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Profil Pengguna</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="login.php">
           <img src="assets/img/19.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Keluar</span>
         </a>
@@ -302,7 +273,7 @@
           <div class="col-lg-12 mx-auto">
             <div class="card rounded shadow border-0">
               <div class="card-body p-5 bg-white rounded">
-              <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#printlaporan">Tambah Pengajuan <i class="bi bi-file-earmark-pdf-fill"></i></button>
+              <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahpengajuan">Tambah Pengajuan <i class="bi bi-file-earmark-pdf-fill"></i></button>
               <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#printlaporan">Print Laporan <i class="bi bi-file-earmark-pdf-fill"></i></button>  
               <div class="table-responsive">
                   <table id="example" class="table table-striped " style="width:100%">
@@ -331,7 +302,10 @@
                                 <td style="width: 150px;">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#info">
                                       <i class="bi bi-eye-fill" style="width: 10px ;"></i>
-                                    </button>    
+                                    </button>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#detail">
+                                      <i class="bi bi-pencil"></i>
+                                    </button>      
                                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus">
                                       <i class="bi bi-trash"></i>
                                     </button>                          
@@ -348,9 +322,8 @@
           </div>
         </div>
       </div>
-    
-            <!-- modal print laporan -->
-            <div class="modal fade" id="printlaporan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- modal tambah pengajuan -->
+            <div class="modal fade" id="tambahpengajuan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content" style="width: 650px;">
                   <div class="modal-header">
@@ -380,14 +353,20 @@
                       <div class="row mb-3">
                         <label for="fullName" class="col-md-4 col-lg-3 col-form-label">NIP</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="nisn" type="text" class="form-control" id="nisn" value="Mirna Milasari">
+                          <input name="nip" type="text" class="form-control" id="nip" value="Mirna Milasari">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Jabatan</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="jabatan" type="text" class="form-control" id="jabatan" value="">
                         </div>
                       </div>
       
                       <div class="row mb-3">
                         <label for="fullName" class="col-md-4 col-lg-3 col-form-label">TTL</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="nisn" type="text" class="form-control" id="nisn" value="">
+                          <input name="ttl" type="text" class="form-control" id="ttl" value="">
                         </div>
                       </div>
       
@@ -438,21 +417,6 @@
                           <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
                         </div>
                       </div>
-                      
-                      <div class="row mb-3">
-                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Nama Wali Murid</label>
-                        <div class="col-md-8 col-lg-9">
-                          <input name="alamatsiswa" type="text" class="form-control" id="alamatsiswa" value="">
-                        </div>
-                      </div>
-      
-                      <div class="row mb-3">
-                        <label for="about" class="col-md-4 col-lg-3 col-form-label">Alamat Wali Murid</label>
-                        <div class="col-md-8 col-lg-9">
-                          <textarea name="alamat" class="form-control" id="about" style="height: 100px"></textarea>
-                        </div>
-                      </div>
-      
                       <div class="text-center">
                         <button type="submit" class="btn btn-success">Simpan</button>
                       </div>
@@ -461,6 +425,97 @@
                 </div>
               </div>
             </div>
+      <!-- modal Edit Pengajuan Mutasi Siswa -->
+      <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content" style="width: 650px;">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Pengajuan Mutasi Pegawai</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggal Pengajuan</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">NIP</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="nip" type="text" class="form-control" id="nip" value="Mirna Milasari">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Jabatan</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="kelas" type="text" class="form-control" id="kelas" value="">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="company" class="col-md-4 col-lg-3 col-form-label">Jenis Kelamin</label>
+                  <div class="col-md-8 col-lg-9">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Perempuan</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Laki-Laki</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">Tahun Pelajaran</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="tapel" type="text" class="form-control" id="tapel" value="">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">Sekolah Lama</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Country" class="col-md-4 col-lg-3 col-form-label">Sekolah Baru</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Alasan Mutasi</label>
+                  <div class="col-md-8 col-lg-9">
+                    <textarea name="alasan" class="form-control" id="alasan" style="height: 100px"></textarea>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Dokumen</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="alamat" class="form-control" id="about" style="height: 200px" value="input class="form-control" type="file">
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success">Simpan</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+           
       <!-- modal informasi pengguna -->
       <div class="modal fade" id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
@@ -488,7 +543,7 @@
                 <div class="col-lg-6 col-md-8 label mb-4">NIP :</div>
               </div>
               <div class="row"style="width: 500px; margin-left: 3rem;">
-                <div class="col-lg-6 col-md-8 label mb-4">Kelas :</div>
+                <div class="col-lg-6 col-md-8 label mb-4">Jabatan :</div>
               </div>
               <div class="row"style="width: 500px; margin-left: 3rem;">
                 <div class="col-lg-6 col-md-8 label mb-4">Tempat, Tanggal Lahir :</div>

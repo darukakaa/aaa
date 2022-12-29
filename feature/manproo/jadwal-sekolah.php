@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
 
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -114,7 +115,7 @@
           <img src="assets/img/1.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Dashboard</span>
         </a>
-      </li><!-- End Dashboard Nav --> 
+      </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="absensi-siswa.php">
@@ -136,6 +137,7 @@
           <span>Penilaian Belajar</span>
         </a>
       </li><!-- End Penilaian Page Nav -->
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="rapor.php">
           <img src="assets/img/5.png" alt="" style="width: 20px; margin-right:10px;">
@@ -144,7 +146,7 @@
       </li><!-- End Rapor Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="jadwal-kelas.php">
+        <a class="nav-link " href="jadwal-kelas.php">
           <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Jadwal</span>
         </a>
@@ -156,6 +158,7 @@
           <span>Berita</span>
         </a>
       </li><!-- End Berita Page Nav -->
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="admin-tu.php">
           <img src="assets/img/8.png" alt="" style="width: 20px; margin-right:10px;">
@@ -164,11 +167,12 @@
       </li><!-- End Admin TU Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link " href="osis.php">
+        <a class="nav-link collapsed" href="osis.php">
           <img src="assets/img/9.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Osis</span>
         </a>
       </li><!-- End Osis Page Nav -->
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="ekstrakulikuler.php">
           <img src="assets/img/10.png" alt="" style="width: 20px; margin-right:10px;">
@@ -182,7 +186,6 @@
           <span>Kantin</span>
         </a>
       </li><!-- End Kantin Page Nav -->
-
       <li class="nav-item">
         <a class="nav-link collapsed" href="koperasi.php">
           <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;">
@@ -209,7 +212,9 @@
           <img src="assets/img/15.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Mutasi</span>
         </a>
-      </li>  
+      </li><!-- End Mutasi Page Nav -->
+
+      
       <li class="nav-item">
         <a class="nav-link collapsed" href="perpustakaan.php">
           <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;">
@@ -217,7 +222,7 @@
         </a>
       </li><!-- End Kantin Page Nav -->
 
-
+    
       <li class="nav-item">
         <a class="nav-link collapsed" href="pendaftaranppdb.php">
           <img src="assets/img/17.png" alt="" style="width: 20px; margin-right:10px;">
@@ -233,7 +238,7 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="login.php">
           <img src="assets/img/19.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Keluar</span>
         </a>
@@ -246,209 +251,215 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Osis</h1>
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-            <li class="breadcrumb-item">Osis</li>
-            <li class="breadcrumb-item active">Kegiatan</li>
-          </ol>
-        </nav>
+      <h1>Jadwal </h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+          <li class="breadcrumb-item">Jadwal</li>
+          <li class="breadcrumb-item active">Kelas</li>
+        </ol>
+      </nav>
     </div>
-      <!-- End Page Title -->
-  
-      <div class="d-grid gap-2 d-md-block">
-        <a class="btn" style="text-decoration: none; margin-right: 10px; box-shadow: 2px 2px 1px grey; background-color: #2C5C52; color: white; border-radius: 50px;" href="osis.php">Kegiatan</a>
-        <a class="btn" style="text-decoration: none;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="anggota-osis.php">Anggota</a>
-        <a class="btn" style="text-decoration: none;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="absensi-osis.php">Absen</a>
-      </div>
-  
-      <div class="container table-responsive">
+    <!-- End Page Title -->
+
+    <div class="d-grid gap-2 d-md-block">
+      <a class="btn" style="text-decoration: none; margin-right: 10px;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="jadwal-kelas.php">Kelas</a>
+      <a class="btn" style="text-decoration: none; box-shadow: 2px 2px 1px grey; background-color: #2C5C52; color: white; border-radius: 50px;"  href="jadwal-sekolah.php">Sekolah</a>
+    </div>
+
+    <div class="container table-responsive">
         <div class="row py-5">
           <div class="col-lg-12 mx-auto">
             <div class="card rounded shadow border-0">
               <div class="card-body p-5 bg-white rounded">
-                <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahkegiatan">Tambah Kegiatan</button>
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="assets/img/Rectangle 26.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Sukses Menyelenggarakan Pemilihan Ketua Osis Periode 2023/2024</h5>
-                        <p class="card-text">Kesuksesan dalam pemilihan kepengurusan OSIS yang baru tentunya tak luput dari peran OSIS lama. Kampanye demi kampanya di sebarkan dikalian siswa/i SMA UNGGULAN UNESA, tentunya kampanye yang sehat. Pengaturan setiap kegiatan yang sangat rapi dikemas ini tentunya dilakukan pengurus OSIS lama yang sekaligus memberikan contoh kepada pengurus yang baru.</p>
-                        <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailkegiatan"><i class="bi bi-eye"></i></a>
-                        <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editkegiatan"><i class="bi bi-pencil"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapuskegiatan"><i class="bi bi-trash"></i></a>
-                      </div>
-                    </div>
-                  </div>
+              <button type="button" class="btn add-kelas" data-bs-toggle="modal" data-bs-target="#tambahjadwal">Tambah Jadwal</button>
+              <a href="#" class="btn add-kelas">Print Kalender</a>
+                <div class="table-responsive">
+                  <table id="example" class="table table-striped " style="width:100%">
+                    
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Kegiatan</th>
+                                <th>Awal</th>
+                                <th>Akhir</th>
+                                <th>Deskripsi</th>
+                                <th>Keterangan</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Libur Semester</td>
+                                <td>24/06/2023</td>
+                                <td>15/07/2023</td>
+                                <td>Akan Dilaksanakan ...</td>
+                                <td>LS</td>
+                                <td style="width: 150px;">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailjadwalsekolah">
+                                      <i class="bi bi-eye-fill" style="width: 10px ;"></i>
+                                    </button>    
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editjadwal">
+                                      <i class="bi bi-pencil"></i>
+                                    </button>   
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapusjadwal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>                          
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="assets/img/Rectangle 26 (1).png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Pelantikan Pengurus OSIS Periode 2023/2024</h5>
-                        <p class="card-text">Hari Senin, 27 Oktober 2022 dilaksanakan Pelantikan dan Serah Terima Jabatan dari Pengurus OSIS Masa Bakti 2022/2023 ke Pengurus OSIS Masa Bakti 2023/2024 di halaman bawah, gedung selatan SMA UNGGULAN UNESA. Pelantikan ini dilaksanakan pada saat upacara bendera, dan pejabat yang melantik adalah Bapak Kepala sekolah SMA UNGGULAN UNESA Drs. Bagus Nugroho, M. Pd...</p>
-                        <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailkegiatan"><i class="bi bi-eye"></i></a>
-                        <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editkegiatan"><i class="bi bi-pencil"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapuskegiatan"><i class="bi bi-trash"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="assets/img/Rectangle 26 (2).png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Latihan Dasar Kepemimpinan (LDK) OSIS SMA UNGGULAN UNESA </h5>
-                        <p class="card-text">OSIS SMA UNGGULAN UNESA kembali gelar kegiatan Latihan Dasar Kemepimpinan (LDK) yang telah dibuka pada hari ini, Jumat, (11/10). Kegiatan LDK yang berlangsung selama dua hari tersebut diikuti oleh lebih dari 60 peserta yang meliputi anggota OSIS SMA UNGGULAN UNESA, Dewan Pramuka, dan Dewan PMR. Kegiatan diawali dengan apel pembukaan kegiatan secara resmi yang dibuka oleh Bapak SITO, S.Pd,...</p>
-                        <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailkegiatan"><i class="bi bi-eye"></i></a>
-                        <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editkegiatan"><i class="bi bi-pencil"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapuskegiatan"><i class="bi bi-trash"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          
               </div>
             </div>
           </div>
-        </div>
+        </div>   
       </div>
-      </div>
-      <!-- modal tambahkegiatan-->
-      <div class="modal fade" id="tambahkegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+
+      <!-- modal tambah jadwal-->
+      <div class="modal fade" id="tambahjadwal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Kegiatan Baru</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel"> Tambah Jadwal Sekolah</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form action="" method="">
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Judul berita</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggal Rilis</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input type="date" class="form-control">
-                  </div>
-                </div>  
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Dokumentasi</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input class="form-control" type="file" id="formFile">
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Deskripsi</label>
-                    <div class="quill-editor-full">
-                      <p>Hello World!</p>
+            <form>
+                    <div class="row mb-3">
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Kegiatan</label>
+                      <div class="col-md-8 col-lg-9">
+                        <textarea class="form-control"  id="floatingTextarea"></textarea>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Timestamp</label>
-                  <div class="col-md-8 col-lg-9">
-                  <input type="time" class="form-control">
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-success">Simpan</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- modal detail kegiatan -->
-      <div class="modal fade" id="detailkegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Detail kegiatan</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form action="" method="">
-                <div class="row">
-                <img src="assets/img/Rectangle 26.png" class="img-fluid" alt="">
-                <h5 class="card-title">Sukses Menyelenggarakan Pemilihan Ketua Osis Periode 2023/2024</h5>
-                 <p class="card-text">Kesuksesan dalam pemilihan kepengurusan OSIS yang baru tentunya tak luput dari peran OSIS lama. Kampanye demi kampanya di sebarkan dikalian siswa/i SMA UNGGULAN UNESA, tentunya kampanye yang sehat. Pengaturan setiap kegiatan yang sangat rapi dikemas ini tentunya dilakukan pengurus OSIS lama yang sekaligus memberikan contoh kepada pengurus yang baru.</p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- modal edit kegiatan -->
-      <div class="modal fade" id="editkegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Kegiatan Baru</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form action="" method="">
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Judul berita</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggal Rilis</label>
-                  <div class="col-md-8 col-lg-9">
-                  <input type="date" class="form-control">
-                  </div>
-                </div>  
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Dokumentasi</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input class="form-control" type="file" id="formFile">
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Deskripsi</label>
-                    <div class="quill-editor-full" style="height: 100px">
-                      <p>Hello World!</p>
+                    <div class="row mb-3">
+                      <label for="Country" class="col-md-4 col-lg-3 col-form-label">Tanggal Awal</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="telepon" type="text" class="form-control" id="Telepon" value="">
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Timestamp</label>
-                  <div class="col-md-8 col-lg-9">
-                  <input type="time" class="form-control">
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-success">Simpan</button>
+
+                    <div class="row mb-3">
+                      <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Tanggal Akhir</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="email" type="email" class="form-control" id="Email" value="">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Deskripsi Kegiatan</label>
+                      <div class="col-md-8 col-lg-9">
+                      <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Email" class="col-md-4 col-lg-3 col-form-label">Keterangan</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="jabatan" type="text" class="form-control" id="Jabatan" value="">
+                      </div>
+                    </div>
+                  </form>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- modal hapus -->
-      <div class="modal fade" id="hapuskegiatan" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+
+      <!-- detail jadwal kelas -->
+      <div class="modal fade" id="detailjadwalsekolah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Rincian Jadwal</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="" method="">
+              <div class="row mb-4">
+                    <div class="col-lg-3 col-md-4 label ">Nama Kegiatan</div>
+                    <div class="col-lg-9 col-md-8">Proklamasi Kemerdekaan RI ke-70 Tahun</div>
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col-lg-3 col-md-4 label">Tanggal Awal</div>
+                    <div class="col-lg-9 col-md-8">17/08/2022</div>
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col-lg-3 col-md-4 label">Tanggal Akhir</div>
+                    <div class="col-lg-9 col-md-8">17/08/2022</div>
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col-lg-3 col-md-4 label">Deskripsi Kegiatan</div>
+                    <div class="col-lg-9 col-md-8">Akan diadakan upacara peringatan yang diikuti oleh seluruh warga sekolah</div>
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col-lg-3 col-md-4 label">Keterangan</div>
+                    <div class="col-lg-9 col-md-8">HLB</div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal edit fasilitas-->
+      <div class="modal fade" id="editjadwal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"> Edit Jadwal Sekolah</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form>
+                    <div class="row mb-3">
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Kegiatan</label>
+                      <div class="col-md-8 col-lg-9">
+                        <textarea class="form-control"  id="floatingTextarea"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Country" class="col-md-4 col-lg-3 col-form-label">Tanggal Awal</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="telepon" type="text" class="form-control" id="Telepon" value="">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Tanggal Akhir</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="email" type="email" class="form-control" id="Email" value="">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Deskripsi Kegiatan</label>
+                      <div class="col-md-8 col-lg-9">
+                      <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Email" class="col-md-4 col-lg-3 col-form-label">Keterangan</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="jabatan" type="text" class="form-control" id="Jabatan" value="">
+                      </div>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal hapus jadwal kelas -->
+      <div class="modal fade" id="hapusjadwal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered" style="width:20rem">
           <div class="modal-content">
             <div class="modal-header">
@@ -456,32 +467,22 @@
             </div>
             <div class="modal-body ">
               <center>
-                <p>Apakah anda ingin hapus data</p>
-                <p>tersebut ?</p>
-                <a href="osis.php" class="btn" style="border-radius: 10px; background-color:#fff; ">Batal</a>
-                <button type="submit" class="btn" style="background-color:#5DA194; color:#fff; border-radius: 10px;">Hapus</button>
-              </center>
+              <p>Apakah anda ingin hapus data</p>
+              <p>tersebut ?</p>
+              <a href="jadwal-sekolah.php" class="btn" style="border-radius: 10px; background-color:#fff; ">Batal</a>
+              <button type="submit" class="btn" style="background-color:#5DA194; color:#fff; border-radius: 10px;">Hapus</button>
+            </center>
             </div>
           </div>
         </div>
       </div>
+   
       
-
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>Zekola</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by Skuitwot
-    </div>
-  </footer><!-- End Footer -->
+  <?php
+    include "layouts/footer.php";
+  ?>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -498,9 +499,9 @@
   <script src="assets/js/jquery.dataTables.min.js"></script>
   <script src="assets/js/dataTables.bootstrap5.min.js"></script>
   <script>
-    $(document).ready(function () {
-        $('#example').DataTable();
-    });
+  $(document).ready(function () {
+      $('#example').DataTable();
+  });
   </script>
 
   <!-- Template Main JS File -->
