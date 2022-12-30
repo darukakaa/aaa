@@ -185,7 +185,7 @@
       </li><!-- End Kantin Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="koperasi.php">
+        <a class="nav-link collapsed" href="koperasi-koleksiproduk.php">
           <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Koperasi</span>
         </a>
@@ -318,10 +318,7 @@
                                     </button>                          
                                 </td>
                             </tr>
-
-                            
                         </tbody>
-                  
                     </table>
                 </div>
               </div>

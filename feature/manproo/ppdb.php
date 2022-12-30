@@ -87,7 +87,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.php">
                 <i class="bi bi-person"></i>
                 <span>Profil</span>
               </a>
@@ -117,49 +117,49 @@
       </li><!-- End Dashboard Nav --> 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="absensi-siswa.html">
+        <a class="nav-link collapsed" href="absensi-siswa.php">
           <img src="assets/img/2.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Absensi</span>
         </a>
       </li><!-- End Absensi Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="kelas.html">
+        <a class="nav-link collapsed" href="kelas.php">
           <img src="assets/img/3.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Kelas</span>
         </a>
       </li><!-- End Kelas Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="penilaian-belajar.html">
+        <a class="nav-link collapsed" href="penilaian-belajar.php">
           <img src="assets/img/4.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Penilaian Belajar</span>
         </a>
       </li><!-- End Penilaian Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="rapor.html">
+        <a class="nav-link collapsed" href="rapor.php">
           <img src="assets/img/5.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Rapor</span>
         </a>
       </li><!-- End Rapor Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="jadwal.html">
+        <a class="nav-link collapsed" href="jadwal.php">
           <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Jadwal</span>
         </a>
       </li><!-- End Jadwal Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="berita.html">
+        <a class="nav-link collapsed" href="berita.php">
           <img src="assets/img/7.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Berita</span>
         </a>
       </li><!-- End Berita Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="admin-tu.html">
+        <a class="nav-link collapsed" href="admin-tu.php">
           <img src="assets/img/8.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Administrasi TU</span>
         </a>
@@ -173,14 +173,14 @@
       </li><!-- End Osis Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="ekstrakulikuler.html">
+        <a class="nav-link collapsed" href="ekstrakulikuler.php">
           <img src="assets/img/10.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Ekstrakulikuler</span>
         </a>
       </li><!-- End Ekstrakulikuler Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="kantin.html">
+        <a class="nav-link collapsed" href="kantin.php">
           <img src="assets/img/11.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Kantin</span>
         </a>
@@ -192,17 +192,17 @@
         </a>
         <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="icons-bootstrap.html">
+            <a href="icons-bootstrap.php">
               <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
             </a>
           </li>
           <li>
-            <a href="icons-remix.html">
+            <a href="icons-remix.php">
               <i class="bi bi-circle"></i><span>Remix Icons</span>
             </a>
           </li>
           <li>
-            <a href="icons-boxicons.html">
+            <a href="icons-boxicons.php">
               <i class="bi bi-circle"></i><span>Boxicons</span>
             </a>
           </li>
@@ -210,14 +210,14 @@
       </li><!-- End Icons Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="fasilitas.html">
+        <a class="nav-link collapsed" href="fasilitas.php">
           <img src="assets/img/13.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Fasilitas</span>
         </a>
       </li><!-- End Kantin Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="perpustakaan.html">
+        <a class="nav-link collapsed" href="perpustakaan.php">
           <img src="assets/img/14.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Perpustakaan</span>
         </a>
@@ -236,17 +236,17 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-chartjs.html">
+            <a href="charts-chartjs.php">
               <i class="bi bi-circle"></i><span>Chart.js</span>
             </a>
           </li>
           <li>
-            <a href="charts-apexcharts.html">
+            <a href="charts-apexcharts.php">
               <i class="bi bi-circle"></i><span>ApexCharts</span>
             </a>
           </li>
           <li>
-            <a href="charts-echarts.html">
+            <a href="charts-echarts.php">
               <i class="bi bi-circle"></i><span>ECharts</span>
             </a>
           </li>
@@ -254,14 +254,14 @@
       </li><!-- End Data Pengguna Nav -->
 
       <li class="nav-item">
-        <a class="nav-link " href="ppdb.html">
+        <a class="nav-link " href="pendaftaranppdb.php">
           <img src="assets/img/17.png" alt="" style="width: 20px; margin-right:10px;">
           <span>PPDB</span>
         </a>
       </li><!-- End PPDB Page Nav -->
       
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.php">
           <img src="assets/img/18.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Profil Pengguna</span>
         </a>
@@ -293,8 +293,8 @@
     <!-- End Page Title -->
 
     <div class="d-grid gap-2 d-md-block">
-      <a class="btn" style="text-decoration: none; margin-right: 10px; box-shadow: 2px 2px 1px grey; background-color: #2C5C52; color: white; border-radius: 50px;" href="pendaftaranppdb.html">Pendaftaran</a>
-      <a class="btn" style="text-decoration: none;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="pengumumanppdb.html">Pengumuman</a>
+      <a class="btn" style="text-decoration: none; margin-right: 10px; box-shadow: 2px 2px 1px grey; background-color: #2C5C52; color: white; border-radius: 50px;" href="pendaftaranppdb.php">Pendaftaran</a>
+      <a class="btn" style="text-decoration: none;  box-shadow: 2px 2px 1px grey; border-radius: 50px;" href="pengumumanppdb.php">Pengumuman</a>
     </div>
 
     <div class="container table-responsive">
