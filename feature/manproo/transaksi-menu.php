@@ -47,7 +47,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.php" class="logo d-flex align-items-center">
+      <a href="dashboard.php" class="logo d-flex align-items-center">
         <img src="assets/img/lg.png" alt="">
         <span class="d-none d-lg-block">ZEKOLA</span>
       </a>
@@ -110,7 +110,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
+        <a class="nav-link collapsed" href="dashboard.php">
           <!-- <i class="bi bi-grid"></i> -->
           <img src="assets/img/1.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Dashboard</span>

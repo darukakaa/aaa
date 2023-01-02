@@ -145,7 +145,7 @@
       </li><!-- End Rapor Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="jadwal.php">
+        <a class="nav-link collapsed" href="jadwal-kelas.php">
           <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Jadwal</span>
         </a>
@@ -186,23 +186,12 @@
         </a>
       </li><!-- End Kantin Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;"><span>Koperasi</span><i class="bi bi-chevron-down ms-auto"></i>
+            <li class="nav-item">
+        <a class="nav-link collapsed" href="koperasi-koleksiproduk.php">
+          <img src="assets/img/12.png" alt="" style="width: 20px; margin-right:10px;">
+          <span>Koperasi</span>
         </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="koperasi-koleksiproduk.php">
-              <i class="bi bi-circle"></i><span>Koleksi Produk</span>
-            </a>
-          </li>
-          <li>
-            <a href="koperasi-transaksi.php">
-              <i class="bi bi-circle"></i><span>Transaksi</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Icons Nav -->
+      </li><!-- End Koperasi Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="fasilitas.php">
@@ -240,14 +229,14 @@
       </li><!-- End PPDB Page Nav -->
       
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.php">
           <img src="assets/img/18.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Profil Pengguna</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
+        <a type="button" class="nav-link collapsed" data-bs-toggle="modal" data-bs-target="#out" >
           <img src="assets/img/19.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Keluar</span>
         </a>
@@ -327,25 +316,25 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"> Detail Absensi Siswa</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel"> Detail Data Pengguna</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="row">
-                <div class="col-lg-3 col-md-4 label mb-4">Nama Lengkap</div>
-                <div class="col-lg-9 col-md-8">Rudi</div>
+                <div class="col-lg-3 col-md-4 label mb-4">Nama Pengguna</div>
+                <div class="col-lg-9 col-md-8">Tiger Nixon</div>
               </div>
               <div class="row">
-              <div class="col-lg-3 col-md-4 label mb-4">Kelas</div>
-                    <div class="col-lg-9 col-md-8">X IPA I</div>
+              <div class="col-lg-3 col-md-4 label mb-4">Email</div>
+                    <div class="col-lg-9 col-md-8">TigerNixon@gmail.com</div>
               </div>
               <div class="row">
-              <div class="col-lg-3 col-md-4 label mb-4">Tanggal</div>
-                    <div class="col-lg-9 col-md-8">21/10/2022</div>
+              <div class="col-lg-3 col-md-4 label mb-4">No. Telepon</div>
+                    <div class="col-lg-9 col-md-8">08592184</div>
               </div>
               <div class="row">
-              <div class="col-lg-3 col-md-4 label mb-4">Status</div>
-                    <div class="col-lg-9 col-md-8">Masuk</div>
+              <div class="col-lg-3 col-md-4 label mb-4">Jabatan</div>
+                    <div class="col-lg-9 col-md-8">Siswa</div>
               </div>
               </div>
           </div>
@@ -357,51 +346,35 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Siswa</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Pengguna</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form action="" method="">
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Pengguna</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Mirna Milasari">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="Tiger Nixon">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Kelas</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Email</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="X IPA I">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="TigerNixon@gmail.com">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tanggal</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">No. Telepon</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="21/10/2022">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="08592184">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Status</label>
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Jabatan</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Masuk">
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="Siswa">
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Keterangan</label>
-                  <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="-">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                      <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto Profil</label>
-                      <div class="col-md-8 col-lg-9">
-                        <img src="assets/img/profile-img.jpg" alt="Profile">
-                        <div class="pt-2">
-                          <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
-                          <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
-                        </div>
-                      </div>
-                    </div>
               </form>
             </div>
             <div class="modal-footer">
@@ -425,6 +398,23 @@
               <a href="absensi-siswa.php" class="btn" style="border-radius: 10px; background-color:#fff; ">Batal</a>
               <button type="submit" class="btn" style="background-color:#5DA194; color:#fff; border-radius: 10px;">Hapus</button>
             </center>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <!-- logout -->
+      <div class="modal fade" id="out" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" style="width:20rem">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <center>
+                <p>Apakah anda ingin Keluar</p>
+                <a href="data-pengguna.php" class="btn" style="border-radius: 10px; background-color:#fff; ">Batal</a>
+                <a href= "login.php" class="btn" style="background-color:#5DA194; color:#fff; border-radius: 10px;">Ya</a>
+              </center>
             </div>
           </div>
         </div>

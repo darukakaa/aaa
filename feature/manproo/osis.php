@@ -46,7 +46,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.php" class="logo d-flex align-items-center">
+      <a href="dashboard.php" class="logo d-flex align-items-center">
         <img src="assets/img/lg.png" alt="">
         <span class="d-none d-lg-block">ZEKOLA</span>
       </a>
@@ -109,7 +109,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
+        <a class="nav-link collapsed" href="dashboard.php">
           <!-- <i class="bi bi-grid"></i> -->
           <img src="assets/img/1.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Dashboard</span>
@@ -211,7 +211,7 @@
         </a>
       </li>  
       <li class="nav-item">
-        <a class="nav-link collapsed" href="perpustakaan.php">
+        <a class="nav-link collapsed" href="data-pengguna.php">
           <img src="assets/img/16.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Data Pengguna</span>
         </a>
@@ -233,7 +233,7 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a type="button" class="nav-link collapsed" data-bs-toggle="modal" data-bs-target="#out" >
           <img src="assets/img/19.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Keluar</span>
         </a>
@@ -465,6 +465,24 @@
           </div>
         </div>
       </div>
+	<!-- logout -->
+      <div class="modal fade" id="out" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" style="width:20rem">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <center>
+                <p>Apakah anda ingin Keluar</p>
+                <a href="osis.php" class="btn" style="border-radius: 10px; background-color:#fff; ">Batal</a>
+                <a href= "login.php" class="btn" style="background-color:#5DA194; color:#fff; border-radius: 10px;">Ya</a>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+
       
 
   </main><!-- End #main -->

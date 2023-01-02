@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <a href="index.php" type="submit" class="btn btn-success w-100">Masuk</a>
+                        <a href="dashboard.php" type="submit" class="btn btn-success w-100">Masuk</a>
                     </div>
                     <div class="mb-3">
                         <button type="button" class="btn btn-light w-100" ><b>Masuk dengan Google</b></button>

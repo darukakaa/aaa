@@ -47,7 +47,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="dashboard.php" class="logo d-flex align-items-center">
         <img src="assets/img/lg.png" alt="">
         <span class="d-none d-lg-block">ZEKOLA</span>
       </a>
@@ -145,7 +145,7 @@
       </li><!-- End Rapor Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="jadwal.php">
+        <a class="nav-link collapsed" href="jadwal-kelas.php">
           <img src="assets/img/6.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Jadwal</span>
         </a>
@@ -230,14 +230,14 @@
       </li><!-- End PPDB Page Nav -->
       
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.php">
           <img src="assets/img/18.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Profil Pengguna</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
+        <a type="button" class="nav-link collapsed" data-bs-toggle="modal" data-bs-target="#out" >
           <img src="assets/img/19.png" alt="" style="width: 20px; margin-right:10px;">
           <span>Keluar</span>
         </a>
@@ -414,6 +414,23 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <!-- logout -->
+      <div class="modal fade" id="out" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" style="width:20rem">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <center>
+                <p>Apakah anda ingin Keluar</p>
+                <a href="perpustakaan-pengembalian.php" class="btn" style="border-radius: 10px; background-color:#fff; ">Batal</a>
+                <a href= "login.php" class="btn" style="background-color:#5DA194; color:#fff; border-radius: 10px;">Ya</a>
+              </center>
             </div>
           </div>
         </div>

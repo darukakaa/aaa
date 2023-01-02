@@ -57,12 +57,12 @@
                 </div>
                 <p>Gunakan minimal 8 karakter dengan kombinasi huruf dan angka</p>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-success w-100">Daftar</button>
+                    <a href="/login.php"><button type="submit" class="btn btn-success w-100">Daftar</button></a>
                 </div>
                 <div class="mb-3">
                     <button type="button" class="btn btn-light w-100" ><b>Masuk dengan Google</b></button>
                 </div>
-                <p class="mb-0 text-center">Sudah punya akun? <a href="login.php" class="text-decoration-none">Masuk sekarang</a></p>
+                <p class="mb-0 text-center">Sudah punya akun? <a href="/login.php" class="text-decoration-none">Masuk sekarang</a></p>
             </form>
         </div>
     </div>
